@@ -1,0 +1,138 @@
+$shadow: #ebebeb;
+.home {
+  min-height: 100vh;
+  background-color: #f6f8fc;
+  position: relative;
+
+  .modal {
+    .modal-content {
+      border-radius: 20px;
+    }
+
+    .modal-body {
+      padding: 50px;
+      position: relative;
+
+      .modal-btn-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+      }
+
+      .modal-select {
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
+      }
+      .ioman-dropdown-toggler {
+        padding: 15px 40px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 700px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dropdown-item {
+        cursor: pointer;
+      }
+
+      .modal-btn-done {
+        padding: 15px 60px;
+        width: 100%;
+        max-width: 300px;
+        font-size: 20px;
+        background-color: #ff7533;
+        border: none;
+      }
+
+      @media screen and (max-width: 576px) {
+        h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        .ioman-dropdown-toggler {
+          padding: 15px 20px;
+          font-size: 16px;
+        }
+
+        .modal-select {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .mCard {
+    cursor: pointer;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 40px;
+    width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px $shadow, 0 3px 10px $shadow, 0 3px 10px $shadow,
+      0 3px 10px $shadow;
+    transition: 0.2s all;
+
+    a {
+      color: #303938;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 100%;
+    }
+  }
+
+  .mCard:hover {
+    background-color: #ff7533;
+
+    h5,
+    p {
+      color: #fff;
+    }
+  }
+
+  .container-top {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .mainImgContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .home-img-sm {
+    display: none;
+    width: auto;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .mainImgContainer {
+      height: 50%;
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .home-img-sm {
+      display: block;
+    }
+    .mainImgContainer {
+      display: none;
+    }
+  }
+}
