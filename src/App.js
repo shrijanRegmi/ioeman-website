@@ -1,13 +1,24 @@
-import './App.css';
-import Home from './pages/Home/home';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap';
+import "./App.css";
+import Home from "./pages/home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Syllabus from "./pages/syllabus";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/syllabus/:id">
+            <Syllabus />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

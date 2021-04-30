@@ -2,6 +2,9 @@ import "./style.scss";
 import { useState } from "react";
 import { ReactComponent as HomeImgLg } from "../../assets/images/home_img_lg.svg";
 import { ReactComponent as HomeImgSm } from "../../assets/images/home_img_sm.svg";
+import { Link } from "react-router-dom";
+import $ from "jquery";
+import getId from "../../utils/id_generator";
 // import { ReactComponent as ContainerTop } from '../../assets/images/container_top.svg';
 
 const categories = [
@@ -31,22 +34,6 @@ const categories = [
   },
 ];
 
-// const modalData = {
-//   faculties: [
-//     'Aerospace',
-//     'Agricultural',
-//     'Architecture',
-//     'Automobile',
-//     'Civil',
-//     'Computer',
-//     'Electrical',
-//     'Electronics and Communication',
-//     'Geomatics',
-//     'Industial',
-//     'Mechanical',
-//   ],
-// };
-
 const modalData = {
   Aerospace: {
     First: [
@@ -57,13 +44,62 @@ const modalData = {
       "Engineering Physics",
       "Workshop Technology",
     ],
-    Second: [],
-    Third: [],
-    Fourth: [],
-    Fifth: [],
-    Sixth: [],
-    Seventh: [],
-    Eighth: [],
+    Second: [
+      "Engineering Mathematics - II",
+      "Engineering Drawing- II",
+      "Basic Electronics Engineering",
+      "Computer Programming",
+      "Engineering Chemistry",
+      "Fundamentals of Thermodynamics and Heat Transfer",
+    ],
+    Third: [
+      "Engineering Mathematics - III",
+      "Fundamentals of Aerospace Engineering",
+      "Engineering Mechanics ",
+      "Fluid Mechanics",
+      "Applied Thermodynamics and Heat Transfer",
+      "Computer Aided Design and Manufacturing",
+    ],
+    Fourth: [
+      "Probability and Statistics",
+      "Control Systems",
+      "Aerospace Materials",
+      "Aerodynamics",
+      "Strength of Materials",
+      "Theory of Mechanism and Machine I",
+    ],
+    Fifth: [
+      "Numerical Methods",
+      "Aircraft Manufacturing Process ",
+      "Theory of Vibration",
+      "Continuum Mechanics",
+      "Aircraft Propulsion",
+      "Fault Monitoring and Diagnosis",
+    ],
+    Sixth: [
+      "Avionics",
+      "Aircraft Maintenance Engineering ",
+      "Finite Element Method ",
+      "Aircraft Environment Control System",
+      "Flight Dynamics",
+      "Unmanned Air Vehicle Synthesis",
+    ],
+    Seventh: [
+      "Aircraft Preliminary Design",
+      "Computational Fluid Dynamics",
+      "Air Traffic Management",
+      "Aircraft Structures",
+      "Embedded Systems in Avionics",
+      "Elective",
+      "Project I",
+    ],
+    Eighth: [
+      "Internship",
+      "Aviation Professional Practices",
+      "Elective II",
+      "Elective III",
+      "Project II",
+    ],
   },
   Agricultural: {
     First: [],
@@ -356,9 +392,22 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="btn btn-dark modal-btn-done" data-dismiss="modal">
-                Done
-              </div>
+              <Link
+                to={`syllabus/${getId({
+                  faculty: selectedFaculty,
+                  semester: selectedSemester,
+                  subject: selectedSubject,
+                })}`}
+              >
+                <div
+                  class="btn btn-dark modal-btn-done"
+                  onClick={() => {
+                    $("#myModal").modal("toggle");
+                  }}
+                >
+                  Done
+                </div>
+              </Link>
             </div>
           </div>
         </div>
