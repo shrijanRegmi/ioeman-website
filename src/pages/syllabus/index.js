@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
-import syllabus from "../../utils/syllabus";
+import syllabus from "../../utils/syllabus/";
 import "./style.scss";
 
 const Syllabus = () => {
@@ -25,13 +25,13 @@ const Syllabus = () => {
     >
       <div class="container text-left">
         {data.title && (
-          <h2 class="page-title display-4 my-4 my-lg-5 text-center">{data.title}</h2>
+          <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            {data.title}
+          </h2>
         )}
         {data.objective && (
           <div class="syllabus-objective">
-            <h4 className="text-left font-weight-bold">
-              Course Objective:
-            </h4>
+            <h4 className="text-left font-weight-bold">Course Objective:</h4>
             <p className="lead">{data.objective}</p>
           </div>
         )}

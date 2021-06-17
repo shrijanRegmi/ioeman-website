@@ -1,4 +1,4 @@
-const syllabus = [
+const ksComputer = [
   {
     id: "computer-first-appliedmechanics",
     title: "Applied Mechanics",
@@ -448,6 +448,198 @@ const syllabus = [
       "“A Text Book of Engineering Drawing”, R. K. Dhawan, S. Chand and Company Limited, India",
     ],
   },
+  {
+    id: "computer-first-engineeringphysics",
+    title: "Engineering Physics",
+    objective:
+      "To provide the concept and knowledge of physics with the emphasis of present day application. The background of physics corresponding to Proficiency Certificate Level is assumed.",
+    chapters: [
+      {
+        title: "Oscillation: (7 hours)",
+        topics: [
+          "Mechanical Oscillation: Introduction",
+          "Free oscillation",
+          "Damped oscillation",
+          "Forced mechanical oscillation",
+          "EM Oscillation: Free, damped and Forced electromagnetic oscillation",
+        ],
+      },
+      {
+        title: "Wave motion (2 hours)",
+        topics: [
+          "Waves and particles",
+          "Progressive wave",
+          "Energy, power and intensity of progressive wave",
+        ],
+      },
+      {
+        title: "Acoustics (3 hours)",
+        topics: [
+          "Reverberation",
+          "Sabine’ Law",
+          "Ultrasound and its applications",
+        ],
+      },
+      {
+        title: "Physical Optics (12 hours)",
+        topics: [
+          "Interference",
+          "Intensity in double slit interference",
+          "Interference in thin films",
+          "Newton’s rings",
+          "Hadinger fringes",
+          "Diffraction",
+          "Fresnel and Fraunhoffer’s diffraction",
+          "Intensity due to a single slit",
+          "Diffraction grating",
+          "X-ray diffraction, x-ray for material test",
+          "Polarization",
+          "Double refraction",
+          "Nichol prism, wave plates",
+          "Optical activity, specific rotation",
+        ],
+      },
+      {
+        title: "Geometrical Optics (3 hours)",
+        topics: [
+          "Lenses, combination of lenses",
+          "Cardinal points",
+          "Chromatic aberration",
+        ],
+      },
+      {
+        title: "Laser and Fiber Optics (4 hours)",
+        topics: [
+          "Laser production",
+          "He-Ne laser",
+          "Uses of laser",
+          "Fiber Optics",
+          "Self focusing",
+          "Applications of optical fiber",
+        ],
+      },
+      {
+        title: "Electrostatics (8 hours)",
+        topics: [
+          "Electric charge and force",
+          "Electric field and potential",
+          "Electrostatic potential energy",
+          "Capacitors, capacitor with dielectric",
+          "Charging and discharging of a capacitor",
+        ],
+      },
+      {
+        title: "Electromagnetism (11 hours)",
+        topics: [
+          "Direct current: Electric current",
+          "Ohm’s law, resistance and resistivity",
+          "Semiconductor and superconductor",
+          "Magnetic fields",
+          "Magnetic force and Torque",
+          "Hall effect",
+          "Cyclotron, synchrotron",
+          "Biot-savart law",
+          "Ampere’s circuit law; magnetic fields straight conductors",
+          "Faraday’s laws, Induction and energy transformation, induced field",
+          "LR circuit, induced magnetic field",
+          "Displacement current",
+        ],
+      },
+      {
+        title: "Electromagnetic waves (5 hours)",
+        topics: [
+          "Maxwell’s equations",
+          "Wave equations, speed",
+          "E and B fields",
+          "Continuity equation",
+          "Energy transfer",
+        ],
+      },
+      {
+        title: "Photon and matter waves (5 hours)",
+        topics: [
+          "Quantization of energy",
+          "Electrons and matter waves",
+          "Schrodinger wave equation",
+          "Probability distribution",
+          "One dimensional potential well",
+          "Uncertainty principle",
+          "Barrier tunneling",
+        ],
+      },
+    ],
+    references: [
+      "Fundamentals of Physics: Halliday, Resnick, Walker (Latest Edition)",
+      "A text book of Optics: Brij Lal and Subrahmanyam (Latest edition)",
+      "Modern Engineering Physics: A. S. Basudeva",
+      "Engineering Physics: R. K. Gaur and S. L. Gupta",
+      "Waves and Oscillation: Brij Lal and Subrahmanyam",
+    ],
+  },
+  {
+    id: "computer-first-mathsi",
+    title: "Engineering Maths I",
+    objective: "",
+    chapters: [
+      {
+        title: "Derivatives and their Applications",
+        topics: [
+          "Introduction",
+          "Higher order derivatives",
+          "Mean value theorem: Rolle’s theorem",
+          "Mean value theorem: Lagrange’s mean value theorem",
+          "Mean value theorem: Cauchy’s mean value theorem",
+          "Power series of single valued function: Taylor’s series",
+          "Power series of single valued function: Maclaurin’s series",
+          "Indeterminate forms: L Hospital rule",
+          "Asymptotes to Cartesian and polar curves",
+          "Pedal equations to Cartesian and polar curves; curvature and radius of curvature",
+        ],
+      },
+      {
+        title: "Integration and its application",
+        topics: [
+          "Introduction",
+          "Definite integrals and their properties",
+          "Improper integrals",
+          "Differentiation under integral signs",
+          "Reduction formula: Beta Gama functions",
+          "Application of integrals for finding areas arc length, surface and solid of revolution in the plane for Cartesian and polar curves",
+        ],
+      },
+      {
+        title: "Plane Analytic Geometry",
+        topics: [
+          "Transformation of coordinates: Translation and rotation",
+          "Ellipse and hyperbola: Standard forms, tangent and normal",
+          "General equation of conics in Cartesian and polar forms",
+        ],
+      },
+      {
+        title: "Ordinary Differential equations and their applications",
+        topics: [
+          "First order and first degree differential equations",
+          "Homogenous differential equations",
+          "Linear differential equations",
+          "Equation reducible to linear differential equations: Bernoulli’s equation",
+          "First order and higher degree differential equation: Clairaut’s equation",
+          "Second order and first degree linear differential equations with constant coefficients",
+          "Second order and first degree linear differential equations with variable coefficients: Cauchy’s equation",
+          "Applications in Engineering field",
+        ],
+      },
+    ],
+    references: [
+      "Erwin Kreyszig, Advance Engineering Mathematics , John Wiley and Sons Inc",
+      "Thomas,Finney,Calculus and Analytical geometry Addison- Wesley",
+      "M. B. Singh, B. C. Bajrachrya, Differential calculus, Sukunda Pustak Bhandar,Nepal",
+      "M. B. Singh, S. P. Shrestha, Applied Mathematics",
+      "G.D. Pant, G. S. Shrestha, Integral Calculus and Differential Equations, Sunila Prakashan,Nepal",
+      "M. R. Joshi, Analytical Geometry, SukundaPustak Bhandar, Nepal",
+      "S. P. Shrestha, H. D. Chaudhary, P. R. Pokharel, A Textbook of Engineering Mathematics – Vol I",
+      "Santosh Man Maskey, Calculus, Ratna Pustak Bhandar, Nepal",
+    ],
+  },
 ];
 
-export default syllabus;
+export default ksComputer;

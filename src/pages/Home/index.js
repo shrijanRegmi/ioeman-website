@@ -12,25 +12,25 @@ const categories = [
     id: 1,
     title: "Syllabus",
     details:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit impedit repellat quia repudiandae voluptatibus",
+      "Bachelor of Engineering IOE Syllabus, New Course which is Updated Syllabus (2066), Course Contents for Institute of Engineering (IOE), Nepal.",
   },
   {
     id: 2,
     title: "Notes",
     details:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit impedit repellat quia repudiandae voluptatibus",
+      "IOE Books and Notes provides the details of the courses of Bachelor of Engineering of Institute of Engineering (IOE), Tribhuvan University (TU), Nepal.",
   },
   {
     id: 3,
     title: "Old Questions",
     details:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit impedit repellat quia repudiandae voluptatibus",
+      "Bachelor of Engineering past questions set to practice.",
   },
   {
     id: 4,
     title: "Formulas",
     details:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit impedit repellat quia repudiandae voluptatibus",
+      "Most important formulas of some important subjects.",
   },
 ];
 
@@ -148,7 +148,7 @@ const modalData = {
       "C Programming",
       "Drawing I",
       "Engineering Physics",
-      "Math I",
+      "Maths I",
     ],
     Second: [
       "Basic Electronics",
@@ -267,7 +267,7 @@ const modalData = {
 };
 
 const Home = () => {
-  const [selectedFaculty, setSelectedFaculty] = useState("Aerospace");
+  const [selectedFaculty, setSelectedFaculty] = useState("Computer");
   const [selectedSemester, setselectedSemester] = useState("First");
   const [selectedSubject, setSelectedSubject] = useState("Applied Mechanics");
 
@@ -317,7 +317,7 @@ const Home = () => {
                 </span>
               </button>
               <div class="modal-select modal-select-faculty text-left">
-                <h3 className="font-weight-bold">Select Faculty</h3>
+                <h4 className="font-weight-bold">Select Faculty</h4>
                 <div class="dropdown">
                   <div
                     class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
@@ -341,7 +341,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="modal-select modal-select-semester text-left">
-                <h3 className="font-weight-bold">Select Semester</h3>
+                <h4 className="font-weight-bold">Select Semester</h4>
                 <div class="dropdown">
                   <div
                     class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
@@ -367,7 +367,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="modal-select modal-select-semester text-left">
-                <h3 className="font-weight-bold">Select Subject</h3>
+                <h4 className="font-weight-bold">Select Subject</h4>
                 <div class="dropdown">
                   <div
                     class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
