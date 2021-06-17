@@ -4,8 +4,7 @@ const getId = ({ faculty, semester, subject }) => {
     ""
   );
 
-  console.log(result);
-  return result;
+  return result.replace(/\s/g, '');
 };
 
 export default getId;

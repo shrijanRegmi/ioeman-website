@@ -146,6 +146,308 @@ const syllabus = [
       "“Engineering Mechanics-Statics and Dynamics”, Shame, I.H. 3rd ed., New Delhi, Prentice Hall of India, 1990.",
     ],
   },
+  {
+    id: "computer-first-basicelectricalengineering",
+    title: "Basic Electrical Engineering",
+    objective:
+      "After completetion of this course the students will understand the fundamental concept of DC, AC and 3-phase electric circuits.",
+    chapters: [
+      {
+        title: "General Electric System (6 hours)",
+        topics: [
+          "Constituent parts of an electrical system (source, load, communication and control)",
+          "Current flow in a circuit",
+          "Electromotive force and potential difference",
+          "Electrical units",
+          "Ohm's law",
+          "Resistors, resistivity",
+          "Temperature rise and temperature coefficient of resistance",
+          "Voltage and current sources",
+        ],
+      },
+      {
+        title: "DC circuits (4 hours)",
+        topics: [
+          "Series circuit",
+          "Parallel circuit",
+          "Kirchhoff's laws",
+          "Power and energy",
+        ],
+      },
+      {
+        title: "Network Theorems (12 hours)",
+        topics: [
+          "Application of Kirchhof's laws in network solution (Nodal and Mesh Analysis)",
+          "Star-delta and delta-star transformation",
+          "Superposition theorem",
+          "Thevnin's theorum",
+          "Nortan's theorum",
+          "Maximum power transfer theorum",
+          "Reciprocity theorum",
+        ],
+      },
+      {
+        title: "Inductance and Capacitance in Electric Circuit (4 hours)",
+        topics: [
+          "General concept of capacitance (Charge & Voltage and Capacitors in series and parallel)",
+          "General concept of inductance (Inductive & Non-inductive circuits and Inductance in series and parallel)",
+        ],
+      },
+      {
+        title: "Alternating Quantities (2 hours)",
+        topics: [
+          "AC system",
+          "Wave form, terms and definitions",
+          "Average and RMS values of current and voltage",
+          "Phasor representation",
+        ],
+      },
+      {
+        title: "Single-Phase AC Circuits (6 hours)",
+        topics: [
+          "AC in resistive circuits",
+          "Current and voltage in an inductive circuit",
+          "Current and voltage in a capacitive circuit",
+          "Concept of complex impedence and admittance",
+          "AC series and parallel circuit",
+          "RL, RC and RLC circuit analysis and phasor representation",
+        ],
+      },
+      {
+        title: "Power in AC Circuit (4 hours)",
+        topics: [
+          "Power in resistive circuit",
+          "Power in inductive and capacitive circuits",
+          "Power in circuit with resistance and reactance",
+          "Active and reactive power",
+          "Power factor, its practical importance",
+          "Improvement of power factor",
+          "Measurement of power in a single phase AC circuit",
+        ],
+      },
+      {
+        title: "Three-Phase Circuit Analysis (6 hours)",
+        topics: [
+          "Basic concept and advantage of three-phase circuit",
+          "Phasor representation of star and delta connection",
+          "Phase and line quantities",
+          "Voltage and current computation in three-phase balance and unbalance circuits",
+          "Real and reactive power computation",
+          "Measurements of power and power factor in three-phase system",
+        ],
+      },
+    ],
+    references: [
+      'J.R Cogdell, "Foundations of Electrical Engineering", Printice Hall, Englewood Chiffs, New Jersy, 1990',
+      'I.M Smith, "Haughes Electical Technology", Addision-Wesley, ISR Rprint, 2000',
+    ],
+  },
+  {
+    id: "computer-first-cprogramming",
+    title: "C Programming",
+    objective:
+      "To acquaint the student with computer software and high level programming languages. Emphasis will be given on developing computer programming skills using computer programming in C and FORTRAN languages.",
+    chapters: [
+      {
+        title:
+          "Overview of computer software & programming languages (2 hours)",
+        topics: [
+          "System software",
+          "Application software",
+          "General software features and recent trends",
+          "Generation of programming languages",
+          "Categorization of high level languages",
+        ],
+      },
+      {
+        title: "Problem solving using Computer (2 hours)",
+        topics: [
+          "Problem analysis",
+          "Algorithm development and Flowchart",
+          "Compilation and Execution",
+          "Debugging and Testing",
+          "Programming Documentation",
+        ],
+      },
+      {
+        title: "Introduction to  ‘C’ programming (3 hours)",
+        topics: [
+          "Character set, Keywords, and Data types",
+          "Preprocessor Directives",
+          "Constants and Variables",
+          "Operators and statements",
+        ],
+      },
+      {
+        title: "Input and Output (2 hours)",
+        topics: [
+          "Formatted input/output",
+          "Character input/output",
+          "Programs using input/output statements",
+        ],
+      },
+      {
+        title: "Control statements(6 hours)",
+        topics: [
+          "Introduction",
+          "The goto, if,  if … else, switch statements",
+          "The while, do … while, for statements",
+        ],
+      },
+      {
+        title: "User-Defined Functions(4 hours)",
+        topics: [
+          "Introduction",
+          "Function definition and return statement",
+          "Function Prototypes",
+          "Function invocation, call by value and call by reference, Recursive Functions",
+        ],
+      },
+      {
+        title: "Arrays and Strings (6 hours)",
+        topics: [
+          "Defining an Array",
+          "One-dimensional Arrays",
+          "Multi-dimensional Arrays",
+          "Strings and string manipulation",
+          "Passing Array and String to function",
+        ],
+      },
+      {
+        title: "Structures (4 hours)",
+        topics: [
+          "Introduction",
+          "Processing a Structure",
+          "Arrays of Structures",
+          "Arrays within Structures",
+          "Structures and Function",
+        ],
+      },
+      {
+        title: "Pointers (4 hours)",
+        topics: [
+          "Introduction",
+          "Pointer declaration",
+          "Pointer arithmetic",
+          "Pointer and Array",
+          "Passing Pointers to a Function",
+          "Pointers and Structures",
+        ],
+      },
+      {
+        title: "Data Files (4 hours)",
+        topics: [
+          "Defining opening and closing a file",
+          "Input/Output operations on Files",
+          "Error handling during input/output operations",
+        ],
+      },
+      {
+        title: "Programming Language: FORTRAN (8 hours)",
+        topics: [
+          "Character set",
+          "Data types, Constants and variables",
+          "Arithmetic operations, Library Functions",
+          "Structure of a Fortran Program",
+          "Formatted and Unformatted Input/Output Statements",
+          "Control Structures: Goto, Logical IF, Arithmetic IF, Do loops",
+          "Arrays: one dimensional and two dimensional",
+        ],
+      },
+    ],
+    references: [
+      "Kelly & Pohl, “A Book on C”, Benjamin/Cumming",
+      "Brian W. Keringhan & Dennis M. Ritchie, “The ‘C’ Programming Language”, PHI",
+      "Bryons S. Gotterfried, “Programming with C”, TMH",
+      "Yashavant Kanetkar, “Let Us C”, BPB",
+      "D. M. Etter, “Structured Fortran & for Engineers and Scientist”, The Benjamin/Cummings Publishing Company, Inc.",
+      "Rama N. Reddy and Carol A. Ziegler, “FORTRAN 77 with Applications for Scientists and Engineers”, Jaico Publishing House",
+      "Alexis Leon, Mathews Leon, “Fundamentals of Information Technology”, Leon Press and Vikas Publishing House",
+    ],
+  },
+  {
+    id: "computer-first-drawingi",
+    title: "Drawing I",
+    objective:
+      "To develop basic projection concepts with reference to points, lines, planes and geometrical solids. Also to develop sketching and drafting skills to facilitate communication.",
+    chapters: [
+      {
+        title:
+          "Instrumental Drawing, Technical Lettering Practices and Techniques (2 hours)",
+        topics: [
+          "Equipment and materials",
+          "Description of drawing instruments, auxiliary equipment and drawing materials",
+          "Techniques of instrumental drawing",
+          "Pencil sharpening, securing paper, proper use of T- squares, triangles, scales dividers, compasses, erasing shields,  French curves, inking pens",
+          "Lettering strokes, letter proportions, use of pencils and pens, uniformity and appearance of letters, freehand techniques, inclined and vertical letters and numerals, upper and lower cases, standard English lettering forms",
+        ],
+      },
+      {
+        title: "Dimensioning (2 hours)",
+        topics: [
+          "Fundamentals and techniques",
+          "Size and location dimensioning, SI conversions",
+          "Use of scales, measurement units, reducing and enlarging  drawings",
+          "Placement of dimensions: aligned and unidirectional",
+        ],
+      },
+      {
+        title: "Applied Geometry (6 hours)",
+        topics: [
+          "Plane geometrical construction:  Proportional division of lines, arc  & line tangents",
+          "Methods  for drawing standard curves such as ellipses, parabolas, hyperbolas, involutes, spirals, cycloids and helices (cylindrical and conical)",
+          "Techniques to reproduce a given drawing (by construction)",
+        ],
+      },
+      {
+        title: "Basic Descriptive Geometry (14 hours)",
+        topics: [
+          "Introduction to Orthographic projection, Principal Planes, Four Quadrants or Angles",
+          "Projection of points on first, second, third and fourth quadrants",
+          "Projection of Lines: Parallel to one of the principal plane, Inclined to one of the principal plane and parallel to other, Inclined to both principal planes",
+          "Projection Planes: Perpendicular to both principal planes, Parallel to one of the principal planes and Inclined to one of the principal planes, perpendicular to other and Inclined to both principal planes",
+          "True length of lines: horizontal, inclined and oblique lines",
+          "Rules for parallel and perpendicular lines",
+          "Point view or end view of a line",
+          "Shortest distance from a point to a line",
+          "Edge View and True shape of an oblique plane",
+          "Angle between two intersecting lines",
+          "Intersection of a line and a plane",
+          "Angle between a line and a plane",
+          "Dihedral angle between two planes",
+          "Shortest distance between  two skew lines",
+          "Angle between two non- intersecting (skew) lines",
+        ],
+      },
+      {
+        title: "Multi view (orthographic) projections (18 hours)",
+        topics: [
+          "Orthographic Projections: First and third angle projection ",
+          "Orthographic Projections: Principal views (methods for obtaining orthographic views, Projection of lines,  angles and plane surfaces, analysis in three views, projection of curved lines and surfaces, object orientation and selection of views for best representation, full and hidden lines)",
+          "Orthographic Projections: Orthographic drawings (making an orthographic drawing, visualizing objects (pictorial view) from the given views)",
+          "Orthographic Projections: Interpretation of adjacent areas, true-length lines, representation of holes, conventional practices",
+          "Sectional Views: Full, half, broken revolved, removed (detail) sections,  phantom of hidden section,  Auxiliary sectional views,  specifying cutting planes for sections, conventions for hidden lines, holes, ribs, spokes",
+          "Auxiliary views: Basic concept and use, drawing methods and types, symmetrical and unilateral auxiliary views.  Projection of curved lines and boundaries, line of intersection between two planes, true size of dihedral angles, true size and shape of plane surfaces",
+        ],
+      },
+      {
+        title: "Developments and Intersections (18 hours)",
+        topics: [
+          "Introduction and Projection of Solids",
+          "Developments: general concepts and practical considerations, development of a right or oblique prism, cylinder, pyramid, and cone, development of truncated pyramid and cone,  Triangulation method  for approximately developed surfaces, transition pieces for connecting different shapes, development of a sphere",
+          "Intersections: lines of intersection of geometric surfaces, piercing point of a line and a geometric solid, intersection lines of two planes,  intersections of -prisms and pyramids, cylinder and an oblique plane. Constructing a development using auxiliary views, intersection of - two cylinders, a cylinder & a cone",
+        ],
+      },
+    ],
+    references: [
+      "“Fundamentals of Engineering Drawing”, W. J. Luzadder, Prentice Hall",
+      "“Engineering Drawing and Graphic Technology”, T. E. French, C. J. Vierck, and R. J. Foster, Mc Graw Hill Publshing Co",
+      "“Technical Drawing”, F. E. Giescke, A . Mitchell, H. C. Spencer and J. T. Dygdone, Macmillan Publshing Co",
+      "“Elementary Engineering Drawing”, N. D. Bhatt, Charotar Publshing House, India",
+      "“A Text Book of Engineering Drawing”, P. S. Gill, S. K. Kataria and Sons, India",
+      "“A Text Book of Engineering Drawing”, R. K. Dhawan, S. Chand and Company Limited, India",
+    ],
+  },
 ];
 
 export default syllabus;
