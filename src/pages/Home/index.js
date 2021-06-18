@@ -155,7 +155,7 @@ const modalData = {
       "Engineering Chemistry",
       "Drawing II",
       "Math II",
-      "Fundamental of Thermodynamics and Heat Transfer",
+      "Thermodynamics and Heat Transfer",
       "Workshop Technology",
     ],
     Third: [
