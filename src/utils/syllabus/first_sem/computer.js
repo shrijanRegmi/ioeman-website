@@ -1,4 +1,4 @@
-const ksComputer = [
+const ksFirstSemComputer = [
   {
     id: "computer-first-appliedmechanics",
     title: "Applied Mechanics",
@@ -642,4 +642,4 @@ const ksComputer = [
   },
 ];
 
-export default ksComputer;
+export default ksFirstSemComputer;
