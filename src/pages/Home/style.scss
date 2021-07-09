@@ -94,7 +94,7 @@ $shadow: #ebebeb;
   }
 
   .mCard:hover {
-    background-color: #ff7533;
+    background-color: var(--color-orange);
 
     h5,
     p {
