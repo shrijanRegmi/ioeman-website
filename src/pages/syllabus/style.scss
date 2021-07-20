@@ -1,7 +1,21 @@
 .ioeman-syllabus {
+  position: relative;
+
   .page-title {
     @media screen and(max-width: 600px) {
       font-size: 50px;
     }
+  }
+
+  .menu-container {
+    position: fixed;
+    z-index: 5;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--color-light-gray);
   }
 }

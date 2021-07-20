@@ -5,7 +5,7 @@ import getId from "../../utils/id_generator";
 import "./style.scss";
 import { ic_keyboard_arrow_down } from "react-icons-kit/md/ic_keyboard_arrow_down";
 
-const SideMenu = ({ className }) => {
+const SideMenu = ({ className, style }) => {
   const { id } = useParams();
   const history = useHistory();
   const splitted = id.split("-");
@@ -21,7 +21,7 @@ const SideMenu = ({ className }) => {
   console.log(subject);
 
   return (
-    <div className={`ioeman-sidemenu text-left p-4 ${className}`}>
+    <div className={`ioeman-sidemenu text-left p-4 ${className}`} style={style}>
       <h4 className="text-center font-weight-bold text-dark">
         {faculty} Engineering
       </h4>
@@ -79,6 +79,7 @@ const SideMenu = ({ className }) => {
 
 SideMenu.defaultProps = {
   className: "",
+  style: {},
 };
 
 export default SideMenu;

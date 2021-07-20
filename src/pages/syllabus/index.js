@@ -1,14 +1,21 @@
 import React, { useState } from "react";
+import Icon from "react-icons-kit";
 import { useParams } from "react-router";
 import SideMenu from "../../components/sidemenu";
 import syllabus from "../../utils/syllabus/";
 import "./style.scss";
+import { ic_menu } from "react-icons-kit/md/ic_menu";
+import { ic_close } from "react-icons-kit/md/ic_close";
+import { scrollWindow } from "../../utils/helpers";
 
 const Syllabus = () => {
   const [data, setData] = useState({});
+  const [isMenuClicked, setMenuClicked] = useState(false);
   const { id } = useParams();
 
   React.useEffect(() => {
+    scrollWindow();
+    setMenuClicked(false);
     const data = syllabus.find((item) => item.id === id);
     if (data) {
       setData(data);
@@ -16,6 +23,11 @@ const Syllabus = () => {
       setData({});
     }
   }, [id]);
+
+  const handleMenuClick = (val) => {
+    scrollWindow();
+    setMenuClicked(val);
+  };
 
   return (
     <div
@@ -26,11 +38,13 @@ const Syllabus = () => {
     >
       <SideMenu className="d-none d-lg-block col-12 col-lg-4 col-xl-2" />
 
-      {Object.keys(data).length === 0 ? (
-        <h2 class="display-4 m-5">Nothing to show !</h2>
+      {isMenuClicked ? (
+        <SideMenu className="w-100" style={{ width: "100%" }} />
+      ) : Object.keys(data).length === 0 ? (
+        <h2 class="display-4">Nothing to show !</h2>
       ) : (
         <div
-          class="text-left px-5 col-12 col-lg-8 col-xl-10"
+          class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
           style={{
             marginBottom: "200px",
           }}
@@ -134,6 +148,17 @@ const Syllabus = () => {
           )}
         </div>
       )}
+
+      <div
+        className="menu-container d-block d-lg-none"
+        onClick={() => handleMenuClick(!isMenuClicked)}
+      >
+        <Icon
+          icon={isMenuClicked ? ic_close : ic_menu}
+          size={30}
+          onClick={() => handleMenuClick(!isMenuClicked)}
+        />
+      </div>
     </div>
   );
 };
