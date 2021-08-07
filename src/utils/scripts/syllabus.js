@@ -12,7 +12,7 @@ const getDataFromOLUL = () => {
       const topics = [];
       if (children) {
         for (const topic of children) {
-          topics.push(topic.innerText);
+          topics.push(topic.innerText.replaceAll("\n", "; "));
         }
 
         if (title.innerText && title.innerText !== "" && topics.length > 0) {
