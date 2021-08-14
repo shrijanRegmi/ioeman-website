@@ -1,5 +1,11 @@
 const data = {
+  id: "computer-sixth-",
+  title: "",
+  objective: "",
   chapters: [],
+  practicals: [],
+  references: [],
+  evaluationScheme: "",
 };
 
 // CASE : I => ol or ul present
@@ -89,7 +95,192 @@ const getDataFromPOnly = () => {
   }
 };
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CASE : IV => table is present with ol or ul
+const getDataFromTableOLUL = () => {
+  const tables = document.querySelectorAll("table");
 
-getDataFromPOnly();
+  for (const table of tables) {
+    const item = {
+      title: "",
+      topics: [],
+    };
+    item.title = table.innerText.replaceAll("\n", "").replaceAll("\t", "");
+    item.topics = table.nextElementSibling.innerText.split("\n") || [];
 
-console.log(data);
+    data.chapters.push(item);
+  }
+};
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CASE : IV => table is present with div
+const getDataFromTableDiv = () => {
+  const tables = document.querySelectorAll("table");
+  const spans = document.querySelectorAll("span");
+
+  for (const span of spans) {
+    console.log(span);
+  }
+
+  for (const table of tables) {
+    const item = {
+      title: "",
+      topics: [],
+    };
+    item.title = table.innerText.replaceAll("\n", "").replaceAll("\t", "");
+
+    data.chapters.push(item);
+  }
+};
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CASE : V => from ioesolution website
+const getDataFromIoeSolutionWebsite = () => {
+  // get subject title
+  const title = document.querySelector("h5");
+  if (title.innerText !== "") {
+    data.title = title.innerText.trim();
+  }
+  //
+
+  // get subject objective
+  const allBs = document.querySelectorAll("b");
+  for (const myB of allBs) {
+    if (myB.innerText.trim().includes("Course Objective")) {
+      const objectives = [];
+      if (myB.parentElement.innerText.trim().includes("Course Objective")) {
+        data.objective = myB.parentElement.innerText
+          .trim()
+          .replaceAll("Course Objective", "")
+          .replaceAll("Course Objectives", "")
+          .replaceAll("\n", "")
+          .replace(":", "");
+      } else if (
+        myB.nextElementSibling &&
+        myB.nextElementSibling.localName === "ol"
+      ) {
+        for (const olChild of myB.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            objectives.push(olChild.innerText.trim());
+          }
+        }
+        data.objective = objectives.join(", ");
+      } else if (
+        myB.parentElement.nextElementSibling &&
+        myB.parentElement.nextElementSibling.localName === "ol"
+      ) {
+        for (const olChild of myB.parentElement.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            objectives.push(olChild.innerText.trim());
+          }
+        }
+        data.objective = objectives.join(", ");
+      }
+    }
+  }
+  //
+
+  // get subject chapters
+  const chapTitles = document.querySelectorAll("ol b");
+  for (const chapTitle of chapTitles) {
+    const chapter = {
+      title: "",
+      topics: [],
+    };
+    chapter.title = chapTitle.innerText.trim();
+    if (chapTitle.innerText.trim() !== "") {
+      if (chapTitle.parentElement.nextElementSibling) {
+        for (const olChild of chapTitle.parentElement.nextElementSibling
+          .children) {
+          if (olChild.localName === "li") {
+            if (olChild.innerText.trim() !== "") {
+              chapter.topics = [...chapter.topics, olChild.innerText.trim()];
+            }
+          } else if (olChild.localName === "ol") {
+            chapter.topics[chapter.topics.length - 1] += ":- ";
+            for (const lastChild of olChild.children) {
+              chapter.topics[
+                chapter.topics.length - 1
+              ] += `${lastChild.innerText.trim()},`;
+            }
+          }
+        }
+      }
+    }
+    if (chapter.title !== "") {
+      data.chapters.push(chapter);
+    }
+  }
+  //
+
+  // get subject practicals
+  for (const myB of allBs) {
+    if (myB.innerText.trim().includes("Practical")) {
+      if (myB.nextElementSibling && myB.nextElementSibling.localName === "ol") {
+        for (const olChild of myB.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            data.practicals.push(olChild.innerText.trim());
+          }
+        }
+      } else if (
+        myB.parentElement.nextElementSibling &&
+        myB.parentElement.nextElementSibling.localName === "ol"
+      ) {
+        for (const olChild of myB.parentElement.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            data.practicals.push(olChild.innerText.trim());
+          }
+        }
+      } else if (myB.parentElement.innerText.trim().includes("Practical")) {
+        data.practicals.push(
+          myB.parentElement.innerText
+            .trim()
+            .replaceAll("Practical", "")
+            .replaceAll("\n", "")
+            .replace(":", "")
+        );
+      }
+    }
+  }
+  //
+
+  // get subject references
+  for (const myB of allBs) {
+    if (myB.innerText.trim().includes("Reference")) {
+      if (myB.nextElementSibling && myB.nextElementSibling.localName === "ol") {
+        for (const olChild of myB.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            data.references.push(olChild.innerText.trim());
+          }
+        }
+      } else if (
+        myB.parentElement.nextElementSibling &&
+        myB.parentElement.nextElementSibling.localName === "ol"
+      ) {
+        for (const olChild of myB.parentElement.nextElementSibling.children) {
+          if (olChild.innerText.trim() !== "") {
+            data.references.push(olChild.innerText.trim());
+          }
+        }
+      } else if (myB.parentElement.innerText.trim().includes("Practical")) {
+        data.references.push(
+          myB.parentElement.innerText
+            .trim()
+            .replaceAll("Practical", "")
+            .replaceAll("\n", "")
+            .replace(":", "")
+        );
+      }
+    }
+  }
+  //
+
+  // get subject evaluation scheme
+  const eScheme = document.querySelector("table");
+  if (eScheme) {
+    data.evaluationScheme = eScheme.outerHTML.replaceAll("\n", "");
+  }
+  //
+};
+
+getDataFromIoeSolutionWebsite();
+
+const chaptersDiv = document.getElementById("chapters");
+chaptersDiv.innerText = `${JSON.stringify(data)}`;

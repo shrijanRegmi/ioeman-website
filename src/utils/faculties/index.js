@@ -150,7 +150,7 @@ const modalData = {
       "Software Engineering",
     ],
     Sixth: [
-      "Artification Intelligence",
+      "Artificial Intelligence",
       "Database Management System",
       "Embedded System",
       "Engineering Economics",

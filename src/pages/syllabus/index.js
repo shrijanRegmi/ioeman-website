@@ -95,7 +95,7 @@ const Syllabus = () => {
             </div>
           )}
 
-          {data.tutorials && (
+          {data.tutorials && data.tutorials.length > 0 && (
             <div class="syllabus-tutorial mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 Tutorials:
@@ -125,7 +125,29 @@ const Syllabus = () => {
             </div>
           )}
 
-          {data.references && (
+          {data.practicals && data.practicals.length > 0 && (
+            <div class="syllabus-references mt-5">
+              <h4 className="text-left font-weight-bold mt-4 mb-3">
+                Practicals:
+              </h4>
+              <ol>
+                {data.practicals.map((ref) => {
+                  return (
+                    <li
+                      className="mt-2"
+                      style={{
+                        fontSize: "20px",
+                      }}
+                    >
+                      {ref}
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          )}
+
+          {data.references && data.references.length > 0 && (
             <div class="syllabus-references mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 References:
@@ -144,6 +166,17 @@ const Syllabus = () => {
                   );
                 })}
               </ol>
+            </div>
+          )}
+
+          {data.evaluationScheme && (
+            <div class="syllabus-evaluation-scheme mt-5">
+              <h4 className="text-left font-weight-bold mt-4 mb-3">
+                Evaluation Scheme:
+              </h4>
+              <div
+                dangerouslySetInnerHTML={{ __html: `${data.evaluationScheme}` }}
+              ></div>
             </div>
           )}
         </div>
