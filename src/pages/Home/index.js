@@ -13,6 +13,8 @@ const Home = () => {
   const [selectedSemester, setselectedSemester] = useState("First");
   const [selectedSubject, setSelectedSubject] = useState("Applied Mechanics");
 
+  const [category, setCategory] = useState("syllabus");
+
   const handleFacultySelection = (faculty) => {
     setSelectedFaculty(faculty);
     const subjects = modalData[selectedFaculty][selectedSemester];
@@ -135,19 +137,25 @@ const Home = () => {
                 </div>
               </div>
               <Link
-                to={`syllabus/${getId({
-                  faculty: selectedFaculty,
-                  semester: selectedSemester,
-                  subject: selectedSubject,
-                })}`}
+                to={
+                  selectedFaculty !== "Computer"
+                    ? ""
+                    : `${category}/${getId({
+                        faculty: selectedFaculty,
+                        semester: selectedSemester,
+                        subject: selectedSubject,
+                      })}`
+                }
               >
                 <div
                   class="btn btn-dark modal-btn-done"
                   onClick={() => {
-                    $("#myModal").modal("toggle");
+                    if (selectedFaculty === "Computer") {
+                      $("#myModal").modal("toggle");
+                    }
                   }}
                 >
-                  Done
+                  {selectedFaculty !== "Computer" ? "Coming Soon !!!" : "Done"}
                 </div>
               </Link>
             </div>
@@ -158,14 +166,17 @@ const Home = () => {
       <HomeImgSm className="home-img-sm w-100" />
       <div class="home-list p-3 p-sm-5">
         <h1 class="font-weight-bold text-left">Home</h1>
-        {categories.map((item) => {
+        {categories.map((item, i) => {
           return (
             <div
               class="mCard text-left"
               data-toggle="modal"
               data-target="#myModal"
+              key={i}
+              onClick={() => {
+                setCategory(item.title.toLowerCase().replace(" ", ""));
+              }}
             >
-              {/* <ContainerTop className="container-top" /> */}
               <h5 class="font-weight-bold">{item.title}</h5>
               <p>{item.details}</p>
             </div>

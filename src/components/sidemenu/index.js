@@ -5,7 +5,7 @@ import getId from "../../utils/id_generator";
 import "./style.scss";
 import { ic_keyboard_arrow_down } from "react-icons-kit/md/ic_keyboard_arrow_down";
 
-const SideMenu = ({ className, style }) => {
+const SideMenu = ({ className, style, category }) => {
   const { id } = useParams();
   const history = useHistory();
   const splitted = id.split("-");
@@ -56,7 +56,7 @@ const SideMenu = ({ className, style }) => {
                       key={sub}
                       onClick={() => {
                         history.push(
-                          `/syllabus/${getId({
+                          `/${category}/${getId({
                             faculty: faculty,
                             semester: sem,
                             subject: sub,
@@ -80,6 +80,7 @@ const SideMenu = ({ className, style }) => {
 SideMenu.defaultProps = {
   className: "",
   style: {},
+  category: "syllabus",
 };
 
 export default SideMenu;
