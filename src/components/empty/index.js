@@ -20,7 +20,7 @@ const Empty = ({ style, className }) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        height: "inherit",
+        maxHeight: "100vh",
         width: "inherit",
         padding: "50px",
         ...style,
@@ -30,7 +30,7 @@ const Empty = ({ style, className }) => {
         className="content"
         style={{
           width: "100%",
-          height: "100%",
+          marginBottom: "50px",
         }}
       >
         <Lottie
