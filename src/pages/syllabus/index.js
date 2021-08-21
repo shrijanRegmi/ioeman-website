@@ -7,6 +7,7 @@ import "./style.scss";
 import { ic_menu } from "react-icons-kit/md/ic_menu";
 import { ic_close } from "react-icons-kit/md/ic_close";
 import { scrollWindow } from "../../utils/helpers";
+import Empty from "../../components/empty";
 
 const Syllabus = () => {
   const [data, setData] = useState({});
@@ -41,7 +42,7 @@ const Syllabus = () => {
       {isMenuClicked ? (
         <SideMenu className="w-100" style={{ width: "100%" }} />
       ) : Object.keys(data).length === 0 ? (
-        <h2 class="display-4">Nothing to show !</h2>
+        <Empty className="col-12 col-lg-8 col-xl-10" />
       ) : (
         <div
           class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
