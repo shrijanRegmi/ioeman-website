@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Icon from "react-icons-kit";
 import { useParams } from "react-router";
 import SideMenu from "../../components/sidemenu";
-import syllabus from "../../utils/syllabus";
+import studyMaterials from "../../utils/study_materials";
 import "./style.scss";
 import { ic_menu } from "react-icons-kit/md/ic_menu";
 import { ic_close } from "react-icons-kit/md/ic_close";
@@ -17,7 +17,7 @@ const Syllabus = () => {
   React.useEffect(() => {
     scrollWindow();
     setMenuClicked(false);
-    const data = syllabus.find((item) => item.id === id);
+    const data = studyMaterials.find((item) => item.id === id);
     if (data) {
       setData(data);
     } else {

@@ -5,7 +5,7 @@ import ksSecondSemComputer from "./second_sem/computer";
 import ksSixthSemComputer from "./sixth_sem/computer";
 import ksThirdSemComputer from "./third_sem/computer";
 
-const syllabus = [
+const studyMaterials = [
   ...ksFirstSemComputer,
   ...ksSecondSemComputer,
   ...ksThirdSemComputer,
@@ -14,4 +14,4 @@ const syllabus = [
   ...ksSixthSemComputer,
 ];
 
-export default syllabus;
+export default studyMaterials;
