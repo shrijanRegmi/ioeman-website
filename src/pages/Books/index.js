@@ -44,13 +44,17 @@ const Books = () => {
       />
 
       {isMenuClicked ? (
-        <SideMenu className="w-100" style={{ width: "100%" }} />
+        <SideMenu
+          category="books"
+          className="w-100"
+          style={{ width: "100%" }}
+        />
       ) : Object.keys(data).length === 0 ||
         !(data && data.books && data.books.length !== 0) ? (
         <div className="col-12 col-lg-8 col-xl-10">
           {data.title && (
             <h2 class="page-title display-4 my-4 my-lg-5 text-center">
-              Books - {data.title}
+              {data.title}
             </h2>
           )}
           <Empty />
@@ -64,7 +68,7 @@ const Books = () => {
         >
           {data.title && (
             <h2 class="page-title display-4 my-4 my-lg-5 text-center">
-              Books - {data.title}
+              {data.title}
             </h2>
           )}
           {data.books &&

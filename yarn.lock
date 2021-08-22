@@ -1768,7 +1768,7 @@
   dependencies:
     "@react-pdf-viewer/core" "2.7.1"
 
-"@react-pdf-viewer/get-file@2.7.1":
+"@react-pdf-viewer/get-file@2.7.1", "@react-pdf-viewer/get-file@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@react-pdf-viewer/get-file/-/get-file-2.7.1.tgz#a61faa89f66176b987acea4c1dd4555481dbfaee"
   integrity sha512-OdUjS23js7hCvGaqmToo44drWKHyaBGPYFpTHyYNymUj6kaI4FsxnS0LuFuCAUlx21KwtSfcpAgQzeEX2Mi5HQ==
@@ -1845,7 +1845,7 @@
   dependencies:
     "@react-pdf-viewer/core" "2.7.1"
 
-"@react-pdf-viewer/toolbar@2.7.1":
+"@react-pdf-viewer/toolbar@2.7.1", "@react-pdf-viewer/toolbar@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@react-pdf-viewer/toolbar/-/toolbar-2.7.1.tgz#5b8c3da2e8fe3437bdd184c982e61cc67790137e"
   integrity sha512-hAQRn5zl42akJ4R2NUFQY/ZUcLvsKybRJPcmIj9kn5mubSUgED00pSTsGnYQguFNjxE8E4qoIRaJKfgaNfK03w==
@@ -1864,7 +1864,7 @@
     "@react-pdf-viewer/theme" "2.7.1"
     "@react-pdf-viewer/zoom" "2.7.1"
 
-"@react-pdf-viewer/zoom@2.7.1":
+"@react-pdf-viewer/zoom@2.7.1", "@react-pdf-viewer/zoom@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@react-pdf-viewer/zoom/-/zoom-2.7.1.tgz#7d5e7be7cf56e49c7eda66842621959b5b308ee9"
   integrity sha512-H4EzwYNDEwO6ISW/+SEs4IQOhvK/ckp0F9B45MtAK7zKBiiAxW626nGWneNvcXdGvsl8eXf7GSFhwzuEveUGPA==

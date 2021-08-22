@@ -251,8 +251,7 @@ const ksFirstSemComputer = [
     ],
     books: [
       {
-        title:
-          "Basic Electrical Engineering guide book with solution to old IOE questions",
+        title: "Guide book with solution to old IOE questions",
         description: "",
         path: "/books/basic_electrical.pdf",
       },
@@ -590,6 +589,12 @@ const ksFirstSemComputer = [
       "Modern Engineering Physics: A. S. Basudeva",
       "Engineering Physics: R. K. Gaur and S. L. Gupta",
       "Waves and Oscillation: Brij Lal and Subrahmanyam",
+    ],
+    books: [
+      {
+        title: "Guide book with solution to old IOE questions",
+        path: "/books/physics.pdf",
+      },
     ],
   },
   {
