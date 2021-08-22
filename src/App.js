@@ -10,31 +10,34 @@ import "./styles/global.scss";
 import Books from "./pages/Books";
 import OldQuestions from "./pages/Old Questions";
 import Formulas from "./pages/Formulas";
+import { Worker } from "@react-pdf-viewer/core";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/syllabus/:id">
-            <Syllabus />
-          </Route>
-          <Route path="/books/:id">
-            <Books />
-          </Route>
-          <Route path="/oldquestions/:id">
-            <OldQuestions />
-          </Route>
-          <Route path="/formulas/:id">
-            <Formulas />
-          </Route>
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
+    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/syllabus/:id">
+              <Syllabus />
+            </Route>
+            <Route path="/books/:id">
+              <Books />
+            </Route>
+            <Route path="/oldquestions/:id">
+              <OldQuestions />
+            </Route>
+            <Route path="/formulas/:id">
+              <Formulas />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    </Worker>
   );
 }
 

@@ -145,6 +145,14 @@ const ksFirstSemComputer = [
       "“A Text Book of Applied Mechanics”, I.B.Prasad",
       "“Engineering Mechanics-Statics and Dynamics”, Shame, I.H. 3rd ed., New Delhi, Prentice Hall of India, 1990.",
     ],
+    books: [
+      {
+        title:
+          "Applied Mechanics for Engineers - Dr. Hari Ram Parajuli and Er. Sudan Neupane",
+        description: "",
+        path: "/books/applied_mechanics.pdf",
+      },
+    ],
   },
   {
     id: "computer-first-basicelectricalengineering",
@@ -240,6 +248,14 @@ const ksFirstSemComputer = [
     references: [
       'J.R Cogdell, "Foundations of Electrical Engineering", Printice Hall, Englewood Chiffs, New Jersy, 1990',
       'I.M Smith, "Haughes Electical Technology", Addision-Wesley, ISR Rprint, 2000',
+    ],
+    books: [
+      {
+        title:
+          "Basic Electrical Engineering guide book with solution to old IOE questions",
+        description: "",
+        path: "/books/basic_electrical.pdf",
+      },
     ],
   },
   {
@@ -638,6 +654,13 @@ const ksFirstSemComputer = [
       "M. R. Joshi, Analytical Geometry, SukundaPustak Bhandar, Nepal",
       "S. P. Shrestha, H. D. Chaudhary, P. R. Pokharel, A Textbook of Engineering Mathematics – Vol I",
       "Santosh Man Maskey, Calculus, Ratna Pustak Bhandar, Nepal",
+    ],
+    books: [
+      {
+        title: "A complete solution to Engineering Mathematics I",
+        description: "",
+        path: "/books/maths.pdf",
+      },
     ],
   },
 ];

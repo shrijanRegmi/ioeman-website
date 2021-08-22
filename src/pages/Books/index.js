@@ -8,6 +8,7 @@ import { ic_menu } from "react-icons-kit/md/ic_menu";
 import { ic_close } from "react-icons-kit/md/ic_close";
 import { scrollWindow } from "../../utils/helpers";
 import Empty from "../../components/empty";
+import PDFRenderer from "../../components/pdf_renderer";
 
 const Books = () => {
   const [data, setData] = useState({});
@@ -41,7 +42,50 @@ const Books = () => {
         category="books"
         className="d-none d-lg-block col-12 col-lg-4 col-xl-2"
       />
-      <Empty className="col-12 col-lg-8 col-xl-10" />
+
+      {isMenuClicked ? (
+        <SideMenu className="w-100" style={{ width: "100%" }} />
+      ) : Object.keys(data).length === 0 ||
+        !(data && data.books && data.books.length !== 0) ? (
+        <div className="col-12 col-lg-8 col-xl-10">
+          {data.title && (
+            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+              Books - {data.title}
+            </h2>
+          )}
+          <Empty />
+        </div>
+      ) : (
+        <div
+          class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
+          style={{
+            marginBottom: "200px",
+          }}
+        >
+          {data.title && (
+            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+              Books - {data.title}
+            </h2>
+          )}
+          {data.books &&
+            data.books.map((item, i) => {
+              return (
+                <div class="syllabus-objective" key={i}>
+                  <h4 className="text-left font-weight-bold">{item.title}</h4>
+                  <p
+                    className="lead"
+                    style={{
+                      marginBottom: "50px",
+                    }}
+                  >
+                    {item.description}
+                  </p>
+                  <PDFRenderer pdf={item.path} />
+                </div>
+              );
+            })}
+        </div>
+      )}
 
       <div
         className="menu-container d-block d-lg-none"

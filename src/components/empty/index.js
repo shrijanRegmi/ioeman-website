@@ -38,7 +38,7 @@ const Empty = ({ style, className }) => {
           height="auto"
           isPaused={false}
           isStopped={false}
-          isClickToPauseDisabled="true"
+          isClickToPauseDisabled={true}
           style={{
             marginBottom: "40px",
             maxWidth: "1200px",
