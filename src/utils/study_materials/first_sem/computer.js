@@ -379,6 +379,12 @@ const ksFirstSemComputer = [
       "Rama N. Reddy and Carol A. Ziegler, “FORTRAN 77 with Applications for Scientists and Engineers”, Jaico Publishing House",
       "Alexis Leon, Mathews Leon, “Fundamentals of Information Technology”, Leon Press and Vikas Publishing House",
     ],
+    books: [
+      {
+        title: "",
+        path: "/books/c_programming.pdf",
+      },
+    ],
   },
   {
     id: "computer-first-drawingi",
@@ -461,6 +467,12 @@ const ksFirstSemComputer = [
       "“Elementary Engineering Drawing”, N. D. Bhatt, Charotar Publshing House, India",
       "“A Text Book of Engineering Drawing”, P. S. Gill, S. K. Kataria and Sons, India",
       "“A Text Book of Engineering Drawing”, R. K. Dhawan, S. Chand and Company Limited, India",
+    ],
+    books: [
+      {
+        title: "",
+        path: "/books/engineering_drawing.pdf",
+      },
     ],
   },
   {
