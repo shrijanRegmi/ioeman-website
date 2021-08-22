@@ -153,6 +153,7 @@ const ksFirstSemComputer = [
         path: "/books/applied_mechanics.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/applied_mechanics.pdf",
   },
   {
     id: "computer-first-basicelectricalengineering",
@@ -256,6 +257,7 @@ const ksFirstSemComputer = [
         path: "/books/basic_electrical.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/basic_electrical.pdf",
   },
   {
     id: "computer-first-cprogramming",
@@ -385,6 +387,7 @@ const ksFirstSemComputer = [
         path: "/books/c_programming.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/c_programming.pdf",
   },
   {
     id: "computer-first-drawingi",
@@ -474,6 +477,7 @@ const ksFirstSemComputer = [
         path: "/books/engineering_drawing.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/engineering_drawing.pdf",
   },
   {
     id: "computer-first-engineeringphysics",
@@ -608,6 +612,7 @@ const ksFirstSemComputer = [
         path: "/books/physics.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/physics.pdf",
   },
   {
     id: "computer-first-mathsi",
@@ -679,6 +684,7 @@ const ksFirstSemComputer = [
         path: "/books/maths.pdf",
       },
     ],
+    old_questions: "/old_questions/first_sem/mathematics.pdf",
   },
 ];
 
