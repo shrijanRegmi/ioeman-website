@@ -18,8 +18,6 @@ const SideMenu = ({ className, style, category }) => {
   const semester = capitalize(splitted[1]);
   const subject = splitted[2];
 
-  console.log(subject);
-
   return (
     <div className={`ioeman-sidemenu text-left p-4 ${className}`} style={style}>
       <h4 className="text-center font-weight-bold text-dark">

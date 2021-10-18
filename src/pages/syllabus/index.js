@@ -32,7 +32,7 @@ const Syllabus = () => {
 
   return (
     <div
-      class="ioeman-syllabus row"
+      className="ioeman-syllabus row"
       style={{
         minHeight: "100vh",
       }}
@@ -45,29 +45,29 @@ const Syllabus = () => {
         <Empty className="col-12 col-lg-8 col-xl-10" />
       ) : (
         <div
-          class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
+          className="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
           style={{
             marginBottom: "200px",
           }}
         >
           {data.title && (
-            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
           {data.objective && (
-            <div class="syllabus-objective">
+            <div className="syllabus-objective">
               <h4 className="text-left font-weight-bold">Course Objective:</h4>
               <p className="lead">{data.objective}</p>
             </div>
           )}
 
           {data.chapters && (
-            <div class="syllabus-chapters">
+            <div className="syllabus-chapters">
               <ol>
-                {data.chapters.map((chapter) => {
+                {data.chapters.map((chapter, i) => {
                   return (
-                    <div>
+                    <div key={i}>
                       <li
                         className="font-weight-bold font"
                         style={{
@@ -97,23 +97,24 @@ const Syllabus = () => {
           )}
 
           {data.tutorials && data.tutorials.length > 0 && (
-            <div class="syllabus-tutorial mt-5">
+            <div className="syllabus-tutorial mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 Tutorials:
               </h4>
               <p className="lead">
-                There shall be related tutorials exercised in class and given as
-                regular homework exercises. Tutorials can be as following for
-                each specified chapters.
+                There shall be related tutorials exercised in className and
+                given as regular homework exercises. Tutorials can be as
+                following for each specified chapters.
               </p>
               <ol>
-                {data.tutorials.map((tutorial) => {
+                {data.tutorials.map((tutorial, i) => {
                   return (
                     <li
                       className="mt-2"
                       style={{
                         fontSize: "20px",
                       }}
+                      key={i}
                     >
                       <span className="font-weight-bold">
                         {tutorial.title} :{" "}
@@ -127,18 +128,19 @@ const Syllabus = () => {
           )}
 
           {data.practicals && data.practicals.length > 0 && (
-            <div class="syllabus-references mt-5">
+            <div className="syllabus-references mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 Practicals:
               </h4>
               <ol>
-                {data.practicals.map((ref) => {
+                {data.practicals.map((ref, i) => {
                   return (
                     <li
                       className="mt-2"
                       style={{
                         fontSize: "20px",
                       }}
+                      key={i}
                     >
                       {ref}
                     </li>
@@ -149,18 +151,19 @@ const Syllabus = () => {
           )}
 
           {data.references && data.references.length > 0 && (
-            <div class="syllabus-references mt-5">
+            <div className="syllabus-references mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 References:
               </h4>
               <ol>
-                {data.references.map((ref) => {
+                {data.references.map((ref, i) => {
                   return (
                     <li
                       className="mt-2"
                       style={{
                         fontSize: "20px",
                       }}
+                      key={i}
                     >
                       {ref}
                     </li>
@@ -171,7 +174,7 @@ const Syllabus = () => {
           )}
 
           {data.evaluationScheme && (
-            <div class="syllabus-evaluation-scheme mt-5">
+            <div className="syllabus-evaluation-scheme mt-5">
               <h4 className="text-left font-weight-bold mt-4 mb-3">
                 Evaluation Scheme:
               </h4>

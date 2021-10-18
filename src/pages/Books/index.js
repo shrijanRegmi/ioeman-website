@@ -33,7 +33,7 @@ const Books = () => {
 
   return (
     <div
-      class="ioeman-syllabus row"
+      className="ioeman-syllabus row"
       style={{
         minHeight: "100vh",
       }}
@@ -53,7 +53,7 @@ const Books = () => {
         !(data && data.books && data.books.length !== 0) ? (
         <div className="col-12 col-lg-8 col-xl-10">
           {data.title && (
-            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
@@ -61,20 +61,20 @@ const Books = () => {
         </div>
       ) : (
         <div
-          class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
+          className="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
           style={{
             marginBottom: "200px",
           }}
         >
           {data.title && (
-            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
           {data.books &&
             data.books.map((item, i) => {
               return (
-                <div class="syllabus-objective mb-5" key={i}>
+                <div className="syllabus-objective mb-5" key={i}>
                   {item.title && (
                     <h4 className="text-left font-weight-bold">
                       {i + 1}. {item.title}
@@ -95,14 +95,14 @@ const Books = () => {
                     id="books-previewer"
                   >
                     <div
-                      class="modal-dialog modal-dialog-centered modal-xl mr-4"
+                      className="modal-dialog modal-dialog-centered modal-xl mr-4"
                       role="document"
                     >
                       <div className="modal-content">
                         <div className="modal-header">
                           <button
                             type="button"
-                            class="modal-btn-close close"
+                            className="modal-btn-close close"
                             data-dismiss="modal"
                             aria-label="Close"
                           >
@@ -126,15 +126,16 @@ const Books = () => {
 
                   <div className="d-flex">
                     <a
-                      class="btn btn-dark modal-btn-done mr-4"
+                      className="btn btn-dark modal-btn-done mr-4"
                       href={`${process.env.PUBLIC_URL}/pdfs/${item.path}`}
                       target="_blank"
+                      rel="noreferrer"
                       download
                     >
                       Download
                     </a>
                     <div
-                      class="btn btn-dark modal-btn-done"
+                      className="btn btn-dark modal-btn-done"
                       data-toggle="modal"
                       data-target="#books-previewer"
                       onClick={() => {}}

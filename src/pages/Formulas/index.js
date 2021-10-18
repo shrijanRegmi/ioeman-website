@@ -32,7 +32,7 @@ const Formulas = () => {
 
   return (
     <div
-      class="ioeman-syllabus row"
+      className="ioeman-syllabus row"
       style={{
         minHeight: "100vh",
       }}

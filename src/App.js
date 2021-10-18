@@ -11,12 +11,14 @@ import Books from "./pages/Books";
 import OldQuestions from "./pages/Old Questions";
 import Formulas from "./pages/Formulas";
 import { Worker } from "@react-pdf-viewer/core";
+import Header from "./components/header";
 
 function App() {
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
       <Router>
         <div className="App">
+          <Header />
           <Switch>
             <Route exact path="/">
               <Home />

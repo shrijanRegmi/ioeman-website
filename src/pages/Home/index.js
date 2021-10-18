@@ -36,17 +36,17 @@ const Home = () => {
   };
 
   return (
-    <div class="home">
-      <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div className="home">
+      <div className="modal fade" tabindex="-1" role="dialog" id="myModal">
         <div
-          class="modal-dialog modal-dialog-centered modal-xl"
+          className="modal-dialog modal-dialog-centered modal-xl"
           role="document"
         >
-          <div class="modal-content">
-            <div class="modal-body">
+          <div className="modal-content">
+            <div className="modal-body">
               <button
                 type="button"
-                class="modal-btn-close close"
+                className="modal-btn-close close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
@@ -60,20 +60,20 @@ const Home = () => {
                   &times;
                 </span>
               </button>
-              <div class="modal-select modal-select-faculty text-left">
+              <div className="modal-select modal-select-faculty text-left">
                 <h4 className="font-weight-bold">Select Faculty</h4>
-                <div class="dropdown">
+                <div className="dropdown">
                   <div
-                    class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
+                    className="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
                     data-toggle="dropdown"
                   >
                     {selectedFaculty} Engineering
                   </div>
-                  <div class="dropdown-menu">
+                  <div className="dropdown-menu">
                     {Object.keys(modalData).map((key, value) => {
                       return (
                         <div
-                          class="dropdown-item"
+                          className="dropdown-item"
                           key={key}
                           onClick={() => handleFacultySelection(key)}
                         >
@@ -84,21 +84,21 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="modal-select modal-select-semester text-left">
+              <div className="modal-select modal-select-semester text-left">
                 <h4 className="font-weight-bold">Select Semester</h4>
-                <div class="dropdown">
+                <div className="dropdown">
                   <div
-                    class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
+                    className="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
                     data-toggle="dropdown"
                   >
                     {selectedSemester} Semester
                   </div>
-                  <div class="dropdown-menu">
+                  <div className="dropdown-menu">
                     {Object.keys(modalData[selectedFaculty]).map(
                       (key, value) => {
                         return (
                           <div
-                            class="dropdown-item"
+                            className="dropdown-item"
                             key={key}
                             onClick={() => handleSemesterSelection(key)}
                           >
@@ -110,21 +110,21 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div class="modal-select modal-select-semester text-left">
+              <div className="modal-select modal-select-semester text-left">
                 <h4 className="font-weight-bold">Select Subject</h4>
-                <div class="dropdown">
+                <div className="dropdown">
                   <div
-                    class="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
+                    className="btn btn-outline-dark ioman-dropdown-toggler dropdown-toggle text-left"
                     data-toggle="dropdown"
                   >
                     {selectedSubject}
                   </div>
-                  <div class="dropdown-menu">
+                  <div className="dropdown-menu">
                     {modalData[selectedFaculty][selectedSemester].map(
                       (item) => {
                         return (
                           <div
-                            class="dropdown-item"
+                            className="dropdown-item"
                             key={item}
                             onClick={() => handleSubjectSelection(item)}
                           >
@@ -148,7 +148,7 @@ const Home = () => {
                 }
               >
                 <div
-                  class="btn btn-dark modal-btn-done"
+                  className="btn btn-dark modal-btn-done"
                   onClick={() => {
                     if (selectedFaculty === "Computer") {
                       $("#myModal").modal("toggle");
@@ -164,12 +164,12 @@ const Home = () => {
       </div>
 
       <HomeImgSm className="home-img-sm w-100" />
-      <div class="home-list p-3 p-sm-5">
-        <h1 class="font-weight-bold text-left">Home</h1>
+      <div className="home-list p-3 p-sm-5">
+        <h1 className="font-weight-bold text-left">Home</h1>
         {categories.map((item, i) => {
           return (
             <div
-              class="mCard text-left"
+              className="mCard text-left"
               data-toggle="modal"
               data-target="#myModal"
               key={i}
@@ -177,7 +177,7 @@ const Home = () => {
                 setCategory(item.title.toLowerCase().replace(" ", ""));
               }}
             >
-              <h5 class="font-weight-bold">{item.title}</h5>
+              <h5 className="font-weight-bold">{item.title}</h5>
               <p>{item.details}</p>
             </div>
           );

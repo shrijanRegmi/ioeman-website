@@ -33,7 +33,7 @@ const OldQuestions = () => {
 
   return (
     <div
-      class="ioeman-syllabus row"
+      className="ioeman-syllabus row"
       style={{
         minHeight: "100vh",
       }}
@@ -52,7 +52,7 @@ const OldQuestions = () => {
         !(data && data.books && data.books.length !== 0) ? (
         <div className="col-12 col-lg-8 col-xl-10">
           {data.title && (
-            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
@@ -60,13 +60,13 @@ const OldQuestions = () => {
         </div>
       ) : (
         <div
-          class="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
+          className="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
           style={{
             marginBottom: "200px",
           }}
         >
           {data.title && (
-            <h2 class="page-title display-4 my-4 my-lg-5 text-center">
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
