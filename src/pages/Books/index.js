@@ -74,17 +74,74 @@ const Books = () => {
           {data.books &&
             data.books.map((item, i) => {
               return (
-                <div class="syllabus-objective" key={i}>
-                  <h4 className="text-left font-weight-bold">{item.title}</h4>
+                <div class="syllabus-objective mb-5" key={i}>
+                  {item.title && (
+                    <h4 className="text-left font-weight-bold">
+                      {i + 1}. {item.title}
+                    </h4>
+                  )}
                   <p
                     className="lead"
                     style={{
-                      marginBottom: "50px",
+                      marginBottom: "30px",
                     }}
                   >
                     {item.description}
                   </p>
-                  <PDFRenderer pdf={item.path} />
+                  <div
+                    className="syllabus-pdf-previewer modal fade"
+                    tabindex="-1"
+                    role="dialog"
+                    id="books-previewer"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered modal-xl mr-4"
+                      role="document"
+                    >
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <button
+                            type="button"
+                            class="modal-btn-close close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span
+                              aria-hidden="true"
+                              style={{
+                                width: "50px",
+                                height: "50px",
+                              }}
+                            >
+                              &times;
+                            </span>
+                          </button>
+                        </div>
+                        <div className="modal-body">
+                          <PDFRenderer pdf={item.path} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex">
+                    <a
+                      class="btn btn-dark modal-btn-done mr-4"
+                      href={`${process.env.PUBLIC_URL}/pdfs/${item.path}`}
+                      target="_blank"
+                      download
+                    >
+                      Download
+                    </a>
+                    <div
+                      class="btn btn-dark modal-btn-done"
+                      data-toggle="modal"
+                      data-target="#books-previewer"
+                      onClick={() => {}}
+                    >
+                      Preview
+                    </div>
+                  </div>
                 </div>
               );
             })}

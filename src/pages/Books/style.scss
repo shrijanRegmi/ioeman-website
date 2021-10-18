@@ -18,4 +18,17 @@
     border-radius: 20px;
     box-shadow: 1px 1px 10px var(--color-light-gray);
   }
+
+  .syllabus-pdf-previewer {
+    .modal-body {
+      max-height: 750px;
+      overflow-y: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        .modal-body {
+          max-height: 400px;
+        }
+    }
+  }
 }

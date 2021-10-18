@@ -383,7 +383,7 @@ const ksFirstSemComputer = [
     ],
     books: [
       {
-        title: "",
+        title: "Introduction to Programming using C - Jayaram",
         path: "/books/c_programming.pdf",
       },
     ],
@@ -473,7 +473,7 @@ const ksFirstSemComputer = [
     ],
     books: [
       {
-        title: "",
+        title: "Engineering Drawing I - Mahesh Chandra Luitel",
         path: "/books/engineering_drawing.pdf",
       },
     ],
