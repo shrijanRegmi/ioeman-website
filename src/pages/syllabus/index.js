@@ -58,12 +58,31 @@ const Syllabus = () => {
         minHeight: "100vh",
       }}
     >
-      <SideMenu className="d-none d-lg-block col-12 col-lg-4 col-xl-2" />
+      <div className="d-none d-lg-block col-12 col-lg-4 col-xl-2"></div>
+      <SideMenu className="d-none d-lg-block col-12 col-lg-4 col-xl-2 position-fixed" />
 
       {isMenuClicked ? (
         <SideMenu className="w-100" style={{ width: "100%" }} />
       ) : Object.keys(data).length === 0 ? (
-        <Empty className="col-12 col-lg-8 col-xl-10" />
+        <div className="px-4 px-lg-5 col-12 col-lg-8 col-xl-10">
+          <Tabs
+            initialItem={tabItems.find(
+              (item) => item.route === location.pathname
+            )}
+            items={tabItems}
+            onChange={(val) => {
+              history.push(val.route);
+            }}
+          />
+
+          {data.title && (
+            <h2 className="page-title display-4 my-4 my-lg-5 text-center">
+              {data.title}
+            </h2>
+          )}
+
+          <Empty />
+        </div>
       ) : (
         <div
           className="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"

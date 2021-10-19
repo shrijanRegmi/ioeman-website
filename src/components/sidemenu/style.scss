@@ -1,5 +1,7 @@
 .ioeman-sidemenu {
   border-right: 1px solid var(--color-light-gray);
+  height: calc(100vh - 65px); // 65px = Navbar height
+  overflow-y: auto;
 
   h5,
   h6 {
@@ -33,5 +35,6 @@
 
   @media screen and(max-width: 998px) {
     border: none;
+    height: 100%;
   }
 }

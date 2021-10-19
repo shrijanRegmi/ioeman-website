@@ -1,13 +1,14 @@
 .ioeman-tabs {
     width: 100%;
-    padding-top: 15px;
-    border-bottom: 2px solid var(--color-light-gray);
+    padding-top: 12px;
+    border-bottom: 1.3px solid var(--color-light-gray2);
 
     h4 {
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 7px 20px;
         border-radius: 5px;
         color: gray;
+        margin-bottom: 14px;
 
         &:hover {
             color: white;

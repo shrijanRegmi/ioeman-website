@@ -19,7 +19,7 @@ const SideMenu = ({ className, style, category }) => {
   const subject = splitted[2];
 
   return (
-    <div className={`ioeman-sidemenu text-left p-4 ${className}`} style={style}>
+    <div className={`ioeman-sidemenu text-left p-4 pb-5 ${className}`} style={style}>
       <h4 className="text-center font-weight-bold text-dark">
         {faculty} Engineering
       </h4>

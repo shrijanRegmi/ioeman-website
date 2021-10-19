@@ -13,10 +13,10 @@ const categories = [
     title: "Old Questions",
     details: "Bachelor of Engineering past questions set to practice.",
   },
-  {
-    title: "Formulas",
-    details: "Most important formulas of some important subjects.",
-  },
+  // {
+  //   title: "Formulas",
+  //   details: "Most important formulas of some important subjects.",
+  // },
 ];
 
 export default categories;

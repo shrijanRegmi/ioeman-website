@@ -61,9 +61,10 @@ const OldQuestions = () => {
         minHeight: "100vh",
       }}
     >
+      <div className="d-none d-lg-block col-12 col-lg-4 col-xl-2"></div>
       <SideMenu
+        className="d-none d-lg-block col-12 col-lg-4 col-xl-2 position-fixed"
         category="oldquestions"
-        className="d-none d-lg-block col-12 col-lg-4 col-xl-2"
       />
       {isMenuClicked ? (
         <SideMenu
@@ -73,12 +74,23 @@ const OldQuestions = () => {
         />
       ) : Object.keys(data).length === 0 ||
         !(data && data.books && data.books.length !== 0) ? (
-        <div className="col-12 col-lg-8 col-xl-10">
+        <div className="px-4 px-lg-5 col-12 col-lg-8 col-xl-10">
+          <Tabs
+            initialItem={tabItems.find(
+              (item) => item.route === location.pathname
+            )}
+            items={tabItems}
+            onChange={(val) => {
+              history.push(val.route);
+            }}
+          />
+
           {data.title && (
             <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}
             </h2>
           )}
+
           <Empty />
         </div>
       ) : (
