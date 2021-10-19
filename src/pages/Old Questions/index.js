@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Icon from "react-icons-kit";
-import { useParams } from "react-router";
+import { useHistory, useLocation, useParams } from "react-router";
 import SideMenu from "../../components/sidemenu";
 import studyMaterials from "../../utils/study_materials";
 import "./style.scss";
@@ -9,11 +9,14 @@ import { ic_close } from "react-icons-kit/md/ic_close";
 import { scrollWindow } from "../../utils/helpers";
 import Empty from "../../components/empty";
 import PDFRenderer from "../../components/pdf_renderer";
+import Tabs from "../../components/tabs";
 
 const OldQuestions = () => {
   const [data, setData] = useState({});
   const [isMenuClicked, setMenuClicked] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
+  const location = useLocation();
 
   React.useEffect(() => {
     scrollWindow();
@@ -30,6 +33,26 @@ const OldQuestions = () => {
     scrollWindow();
     setMenuClicked(val);
   };
+  
+
+  const tabItems = [
+    {
+      id: 0,
+      value: "Syllabus",
+      route: `/syllabus/${id}`,
+    },
+    {
+      id: 1,
+      value: "Books",
+      route: `/books/${id}`,
+    },
+    {
+      id: 2,
+      value: "Old Questions",
+      route: `/oldquestions/${id}`,
+    },
+  ];
+
 
   return (
     <div
@@ -65,6 +88,16 @@ const OldQuestions = () => {
             marginBottom: "200px",
           }}
         >
+          <Tabs
+            initialItem={tabItems.find(
+              (item) => item.route === location.pathname
+            )}
+            items={tabItems}
+            onChange={(val) => {
+              history.push(val.route);
+            }}
+          />
+
           {data.title && (
             <h2 className="page-title display-4 my-4 my-lg-5 text-center">
               {data.title}

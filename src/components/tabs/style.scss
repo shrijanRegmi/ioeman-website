@@ -1,0 +1,36 @@
+.ioeman-tabs {
+    width: 100%;
+    padding-top: 15px;
+    border-bottom: 2px solid var(--color-light-gray);
+
+    h4 {
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: gray;
+
+        &:hover {
+            color: white;
+            background-color: var(--color-orange);
+        }
+    }
+
+    .tab-active {
+        color: white;
+        background-color: var(--color-orange);
+    }
+
+    @media screen and(max-width: 550px) {
+        h4 {
+            font-size: 20px;
+            padding: 8px 12px;
+        }
+    }
+
+    @media screen and(max-width: 400px) {
+        h4 {
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+    }
+}

@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="modal fade" tabindex="-1" role="dialog" id="myModal">
+      <div className="modal fade" tabIndex="-1" role="dialog" id="myModal">
         <div
           className="modal-dialog modal-dialog-centered modal-xl"
           role="document"
