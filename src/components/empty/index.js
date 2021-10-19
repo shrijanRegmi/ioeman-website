@@ -47,7 +47,7 @@ const Empty = ({ style, className }) => {
           className="img-fluid"
         />
         <h1>Nothing to show at the moment...</h1>
-        <p>But soon this place will be crowded with study material</p>
+        <p>But soon this place will be crowded with study materials</p>
       </div>
     </div>
   );

@@ -12,8 +12,18 @@ a {
   }
 }
 
+.row {
+  max-width: 100%;
+  margin: 0px;
+}
+
 .ioeman-svg-white {
   .text {
     color: white;
   }
+}
+
+.ioeman-bg-orange {
+  background-color: var(--color-orange);
+  color: white;
 }

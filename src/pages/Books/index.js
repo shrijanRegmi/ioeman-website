@@ -95,7 +95,7 @@ const Books = () => {
                     id="books-previewer"
                   >
                     <div
-                      className="modal-dialog modal-dialog-centered modal-xl mr-4"
+                      className="modal-dialog modal-dialog-centered modal-xl"
                       role="document"
                     >
                       <div className="modal-content">
@@ -126,7 +126,7 @@ const Books = () => {
 
                   <div className="d-flex">
                     <a
-                      className="btn btn-dark modal-btn-done mr-4"
+                      className="btn modal-btn-done mr-4 ioeman-bg-orange"
                       href={`${process.env.PUBLIC_URL}/pdfs/${item.path}`}
                       target="_blank"
                       rel="noreferrer"
@@ -135,7 +135,7 @@ const Books = () => {
                       Download
                     </a>
                     <div
-                      className="btn btn-dark modal-btn-done"
+                      className="btn modal-btn-done ioeman-bg-orange"
                       data-toggle="modal"
                       data-target="#books-previewer"
                       onClick={() => {}}
