@@ -1,5 +1,5 @@
 const data = {
-  id: "computer-sixth-",
+  id: "computer-second-",
   title: "",
   objective: "",
   chapters: [],

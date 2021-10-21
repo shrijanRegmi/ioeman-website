@@ -1,12 +1,12 @@
 const ksSecondSemComputer = [
   {
     id: "computer-second-basicelectronics",
-    title: "Basic Electronics",
+    title: "Basic Electronics Engineering",
     objective:
-      "To understand the language of electronics, elements and their functionality, basic understanding of analog systems and their applications, basic understanding of digital systems and their applications.",
+      "To understand the language of electronics, elements and their functionality. Basic understanding of analog systems and their applications. Basic understanding of digital systems and their applications",
     chapters: [
       {
-        title: "Basic Circuits Concepts (4 hours)",
+        title: "Basic Circuits Concepts(4 hours)",
         topics: [
           "Passive components: Resistance, Inductance, Capacitance; series, parallel combinations; Kirchhoff's law: Voltage, Current; Linearity",
           "Signal sources: Voltage and Current sources; Non-ideal sources; Representation under assumption of Linearity; controlled sources: VCVS, CCVS, VCCS, CCCS; concept of Gain, Transconductance, Transimpedance",
@@ -15,7 +15,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Diodes (7 hours)",
+        title: "Diodes(7 hours)",
         topics: [
           "Semiconductor Diode Characteristics",
           "Modeling the Semiconductor Diode",
@@ -25,7 +25,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Transistor (4 hours)",
+        title: "Transistor(4 hours)",
         topics: [
           "BJT configuration and biasing, small and large signal model",
           "T and µ model",
@@ -44,7 +44,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Communication System (4 hours)",
+        title: "Communication System(4 hours)",
         topics: [
           "Introduction",
           "Wired and Wireless Communication system",
@@ -54,7 +54,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Digital Electronics (11 hours)",
+        title: "Digital Electronics(11 hours)",
         topics: [
           "Number systems, Binary arithmetic",
           "Logic gates: OR, NOT, AND, NOR, NAND, XOR, XNOR gate; Truth tables",
@@ -66,7 +66,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Application of Electronic System (5 hours)",
+        title: "Application of Electronic System(5 hours)",
         topics: [
           "Instrumentation system: Transducer, Strain Gauge, DMM, Oscilloscope",
           "Regulated power supply",
@@ -74,11 +74,21 @@ const ksSecondSemComputer = [
         ],
       },
     ],
+    practicals: [
+      "Familiarization with passive components, function generator and oscilloscope",
+      "Diode characteristics, rectifiers, Zener diodes",
+      "Bipolar junction transistor characteristics and single stage amplifier",
+      "Voltage amplifiers using op-amp, Comparators, Schmitt",
+      "Wave generators using op-amp",
+      "Combinational and sequential circuits",
+    ],
     references: [
       "Robert Boylestad and Louis Nashelsky, “Electronic Devices and Circuit Theory” PHI; 8th Edition.200",
       "Thomas L. Floyd, “Electronic Devices” 8th Edition, Pearson Education, Inc., 2007",
       "A.S. Sedra and K.C. Smith, “Microelectronic Circuits”, 6th Edition, Oxford University Press, 2006",
     ],
+    evaluationScheme:
+      '<table border="1" cellspacing="0" cellpadding="0" width="298"> <tbody> <tr> <td width="74" valign="top"> <p align="center"> <b>Chapter</b> </p> </td> <td width="60" valign="top"> <p align="center"><b>Hour</b></p> </td> <td width="156" valign="top"> <p align="center"><b>Mark Distribution*</b></p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">1</p> </td> <td width="60" valign="top"> <p align="center">4</p> </td> <td width="156" valign="top"> <p align="center">8</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">2</p> </td> <td width="60" valign="top"> <p align="center">7</p> </td> <td width="156" valign="top"> <p align="center">12</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">3</p> </td> <td width="60" valign="top"> <p align="center">7</p> </td> <td width="156" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">4</p> </td> <td width="60" valign="top"> <p align="center">7</p> </td> <td width="156" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">5</p> </td> <td width="60" valign="top"> <p align="center">4</p> </td> <td width="156" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">6</p> </td> <td width="60" valign="top"> <p align="center">11</p> </td> <td width="156" valign="top"> <p align="center">12</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">7</p> </td> <td width="60" valign="top"> <p align="center">5</p> </td> <td width="156" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center">2, 3, 4, 5, 7</p> </td> <td width="60" valign="top"> <p align="center">&nbsp;</p> </td> <td width="156" valign="top"> <p align="center">8</p> </td> </tr> <tr> <td width="74" valign="top"> <p align="center"><b>Total</b></p> </td> <td width="60" valign="top"> <p align="center"><b>45</b></p> </td> <td width="156" valign="top"> <p align="center"><b>80</b></p> </td> </tr> </tbody> </table>',
   },
   {
     id: "computer-second-engineeringchemistry",
@@ -87,7 +97,7 @@ const ksSecondSemComputer = [
       "To develop the basic concepts of Physical Chemistry, Inorganic Chemistry and Organic Chemistry relevant to problems in engineering.",
     chapters: [
       {
-        title: "Electro-chemistry and Buffer (6 hours)",
+        title: "Electro-chemistry and Buffer(6 hours)",
         topics: [
           "Electro-Chemical cells",
           "Electrode Potential and Standard Electrode Potential",
@@ -104,7 +114,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Catalyst (4 hours)",
+        title: "Catalyst(4 hours)",
         topics: [
           "Introduction",
           "Action of Catalyst(Catalytic Promoters and Catalytic Poisons)",
@@ -115,7 +125,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Environmental Chemistry (5 hours)",
+        title: "Environmental Chemistry(5 hours)",
         topics: [
           "Air Pollution",
           "Air Pollutants i) Gases:SOx, NOx, CO, CO2, O3 and Hydrocarbons ii)Particulates dust, smoke and fly ash",
@@ -128,21 +138,18 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Engineering Polymers (6 hours)",
+        title: "Engineering Polymers(6 hours)",
         topics: [
           "Inorganic Polymers",
-          "General properties of Inorganic Polymers: Polyphosphazines",
-          "General properties of Inorganic Polymers: Sulpher Based Polymers",
-          "General properties of Inorganic Polymers: Chalcogenide Glasses",
-          "General properties of Inorganic Polymers: Silicones",
+          "General properties of Inorganic Polymers:- Polyphosphazines,Sulpher Based Polymers,Chalcogenide Glasses,Silicones,",
           "Organic Polymers",
           "Types of Organic Polymers",
-          "Preparation and application of i) Polyurethane ii) Polystyrene iii) Polyvinylchloride iv) Teflon v) Nylon 6,6 and vi) Bakelite vii) Epoxy Resin viii) Fiber Reinforced Polymer",
+          "Preparation and application of\ni) Polyurethane ii) Polystyrene iii) Polyvinylchloride iv) Teflon v) Nylon 6,6 and vi) Bakelite vii) Epoxy Resin viii) Fiber Reinforced Polymer",
           "Concept of Bio-Degradable, Non-Biodegradable and Conducting polymers",
         ],
       },
       {
-        title: "3-d Transition elements and their applications (5 hours)",
+        title: "3-d Transition elements and their applications(5 hours)",
         topics: [
           "Introduction",
           "Electronic Configuration",
@@ -155,7 +162,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Coordination Complexes (5 hours)",
+        title: "Coordination Complexes(5 hours)",
         topics: [
           "Introduction",
           "Terms used in Coordination Complexes",
@@ -163,13 +170,13 @@ const ksSecondSemComputer = [
           "Sidgwick’s Model and Sidgwick’s effective atomic number rule",
           "Nomenclature of Coordination compounds(Neutral type, simple cation and complex anion and complex cation and simple anion type)",
           "Valence Bond Theory of Complexes",
-          "Application of valence bond theory in the formation of i) Tetrahedral Complexes ii) Square planar Complexes and iii) Octahedral Complexes",
+          "Application of valence bond theory in the formation of i) Tetrahedral Complexes\nii) Square planar Complexes and iii) Octahedral Complexes",
           "Limitations of Valence Bond Theory",
           "Applications of Coordination Complexes",
         ],
       },
       {
-        title: "Explosives (3 hours)",
+        title: "Explosives(3 hours)",
         topics: [
           "Introduction",
           "Types of explosives: Primary, Low and High explosives",
@@ -188,7 +195,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Stereochemistry (4 hours)",
+        title: "Stereochemistry(4 hours)",
         topics: [
           "Introduction",
           "Geometrical Isomerism(Cis-Trans Isomerism), Z and E concept of Geometrical Isomerism",
@@ -197,7 +204,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Reaction Mechanism in Organic reactions (4 hours)",
+        title: "Reaction Mechanism in Organic reactions(4 hours)",
         topics: [
           "Substitution reaction",
           "Types of substitution reaction SN1 and SN2",
@@ -206,6 +213,17 @@ const ksSecondSemComputer = [
           "Factors governing SN1, SN2, E1 and E2 reaction mechanism path",
         ],
       },
+    ],
+    practicals: [
+      "Compare the alkalinity of different water samples by double indicator method(6 Periods)",
+      "Determine the temporary and permanent hardness of water by EDTA Complexo-metric method(3 Periods)",
+      "Determine residual and combined chlorine present in the chlorinated sample of water by Iodometric method(6 Periods)",
+      "Prepare organic polymer nylon 6,6; Bakelite in the laboratory(3 Periods)",
+      "Determine the pH of different sample of buffer solution by universal indicator method(6 Periods)",
+      "Prepare inorganic complex in the laboratory(3 Periods)",
+      "Determine surface tension of the given detergent solution and compare its cleansing power with other detergent solutions(6 Periods)",
+      "Construct an electrochemical cell in the laboratory and measure the electrode potential of it(3 Periods)",
+      "Estimate the amount of iron present in the supplied sample of ferrous salt using standard potassium permanganate solution(redox titration)(6 Periods)",
     ],
     references: [
       '"Engineering Chemistry",by Jain and Jain',
@@ -218,6 +236,8 @@ const ksSecondSemComputer = [
       '"Selected Topics in Physical Chemistry",by Moti Kaji Sthapit',
       '"Environmental Engineering",by Peavy, Rowe and Tchobanoglous',
     ],
+    evaluationScheme:
+      '<table border="1" cellspacing="0" cellpadding="0" width="287"> <tbody> <tr> <td width="73"> <p align="center"> <b>Chapter</b></p> </td> <td width="69"> <p align="center"><b>Hours</b></p> </td> <td width="137"> <p align="center"><b>Marks distribution*</b></p> </td> </tr> <tr> <td width="73"> <p align="center">1</p> </td> <td width="69"> <p align="center">6</p> </td> <td width="137"> <p align="center">10</p> </td> </tr> <tr> <td width="73"> <p align="center">2</p> </td> <td width="69"> <p align="center">4</p> </td> <td width="137"> <p align="center">5 or 10</p> </td> </tr> <tr> <td width="73"> <p align="center">3</p> </td> <td width="69"> <p align="center">5</p> </td> <td width="137"> <p align="center">10</p> </td> </tr> <tr> <td width="73"> <p align="center">4</p> </td> <td width="69"> <p align="center">6</p> </td> <td width="137"> <p align="center">10</p> </td> </tr> <tr> <td width="73"> <p align="center">5</p> </td> <td width="69"> <p align="center">5</p> </td> <td width="137"> <p align="center">10</p> </td> </tr> <tr> <td width="73"> <p align="center">6</p> </td> <td width="69"> <p align="center">5</p> </td> <td width="137"> <p align="center">10</p> </td> </tr> <tr> <td width="73"> <p align="center">7</p> </td> <td width="69"> <p align="center">3</p> </td> <td width="137"> <p align="center">5</p> </td> </tr> <tr> <td width="73"> <p align="center">8</p> </td> <td width="69"> <p align="center">3</p> </td> <td width="137"> <p align="center">5</p> </td> </tr> <tr> <td width="73"> <p align="center">9</p> </td> <td width="69"> <p align="center">4</p> </td> <td width="137"> <p align="center">5 or 10</p> </td> </tr> <tr> <td width="73"> <p align="center">10</p> </td> <td width="69"> <p align="center">4</p> </td> <td width="137"> <p align="center">5 or 10</p> </td> </tr> <tr> <td width="73"> <p align="center">Total</p> </td> <td width="69"> <p align="center">45</p> </td> <td width="137"> <p align="center">80</p> </td> </tr> </tbody> </table>',
   },
   {
     id: "computer-second-drawingii",
@@ -276,21 +296,20 @@ const ksSecondSemComputer = [
   },
   {
     id: "computer-second-mathii",
-    title: "Maths II",
+    title: "Engineering Mathematics II",
     objective:
-      "To develop the skill of solving differential equations and to provide knowledge of vector algebra and calculus and to make students familiar with calculus of several variables and infinite series.",
+      "To develop the skill of solving differential equations and to provide knowledge of vector algebra and calculus. To make students familiar with calculus of several variables and infinite series",
     chapters: [
       {
-        title: "Calculus of Two or more variables (6 hours)",
+        title: "Calculus of Two or more variables(6 hours)",
         topics: [
           "Introduction: Limit and Continuity",
-          "Partial Derivatives: Homogeneous function, Euler’s theorem for the function of two and three variables",
-          "Partial Derivatives: Total Derivatives",
+          "Partial Derivatives:- Homogeneous function, Euler’s theorem for the function of two and three variables,Total Derivatives,",
           "Extrema of functions of two and three variables: Lagrange’s Multiplier",
         ],
       },
       {
-        title: "Multiple Integrals (6 hours)",
+        title: "Multiple Integrals(6 hours)",
         topics: [
           "Introduction",
           "Double Integrals in Cartesian and Polar form: Change of order of integration",
@@ -299,7 +318,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Three Dimensional Solid Geometry (11 hours)",
+        title: "Three Dimensional Solid Geometry(11 hours)",
         topics: [
           "The Straight Line; Symmetric and General form",
           "Coplanar Lines",
@@ -313,17 +332,27 @@ const ksSecondSemComputer = [
       },
       {
         title:
-          "Solution of Differential Equations in Series and Special Functions (9 hours)",
+          "Solution of Differential Equations in Series and Special Functions",
         topics: [
           "Solution of Differential Equation by Power Series Method",
           "Legendre’s Equation",
-          "Legendre's Polynomial function: Properties and Applications",
+          "Legendre's Polynomial function: Properties and Applications.",
           "Bessel’s Equation",
           "Bessel’s Function of First and Second kind: Properties and Applications",
         ],
       },
       {
-        title: "Vector Algebra and Calculus (8 hours)",
+        title: "(9 hours)",
+        topics: [
+          "Solution of Differential Equation by Power Series Method",
+          "Legendre’s Equation",
+          "Legendre's Polynomial function: Properties and Applications.",
+          "Bessel’s Equation",
+          "Bessel’s Function of First and Second kind: Properties and Applications",
+        ],
+      },
+      {
+        title: "Vector Algebra and Calculus(8 hours)",
         topics: [
           "Introduction",
           "Two and Three dimensional vectors",
@@ -336,7 +365,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Infinite Series (5 hours)",
+        title: "Infinite Series(5 hours)",
         topics: [
           "Introduction",
           "Series with Positives terms",
@@ -346,6 +375,7 @@ const ksSecondSemComputer = [
         ],
       },
     ],
+    practicals: [],
     references: [
       'Erwin Kreyszig, "Advanced Engineering Mathematics" , John Wiley and Sons Inc',
       'Thomas, Finney, "Calculus and Analytical Geometry" Addison- Wesley',
@@ -356,40 +386,36 @@ const ksSecondSemComputer = [
       'Y. R. Sthapit, B. C. Bajrachrya, "A text book of Three Dimensional Geometry", Sukunda  Pustak Bhandar,Nepal',
       'Santosh Man Maskey,"Calculus", Ratna Pustak Bhandar, Nepal',
     ],
+    evaluationScheme:
+      '<table border="1" cellspacing="0" cellpadding="0" width="283"> <tbody> <tr> <td width="64" valign="top"> <p align="center"><b>Chapter</b></p> </td> <td width="66" valign="top"> <p align="center"><b>Hours</b></p> </td> <td width="145" valign="top"> <p align="center"><b>Mark distribution *</b></p> </td> </tr> <tr> <td width="64" valign="top"> <p align="center">1</p> </td> <td width="66" valign="top"> <p align="center">06</p> </td> <td width="145" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="66" valign="top"> <p align="center">2</p> </td> <td width="66" valign="top"> <p align="center">06</p> </td> <td width="145" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="66" valign="top"> <p align="center">3</p> </td> <td width="66" valign="top"> <p align="center">11</p> </td> <td width="145" valign="top"> <p align="center">20</p> </td> </tr> <tr> <td width="66" valign="top"> <p align="center">4</p> </td> <td width="66" valign="top"> <p align="center">09</p> </td> <td width="145" valign="top"> <p align="center">15</p> </td> </tr> <tr> <td width="66" valign="top"> <p align="center">5</p> </td> <td width="66" valign="top"> <p align="center">08</p> </td> <td width="145" valign="top"> <p align="center">15</p> </td> </tr> <tr> <td width="66" valign="top"> <p align="center">6</p> </td> <td width="66" valign="top"> <p align="center">05</p> </td> <td width="145" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="64" valign="top"> <p align="center">Total</p> </td> <td width="66" valign="top"> <p align="center">45</p> </td> <td width="145" valign="top"> <p align="center">80</p> </td> </tr> </tbody> </table>',
   },
   {
     id: "computer-second-thermodynamicsandheattransfer",
     title: "Fundamentals of Thermodynamics and Heat Transfer",
-    objective:
-      "After the completion of this course, students will able to understand basic concepts, laws of thermodynamics and heat transfer and their applications as well.",
+    objective: "To develop basic concepts, laws of thermodynamics and heat transfer and their applications.",
     chapters: [
       {
-        title: "Introduction (4 hours)",
+        title: "Introduction(3 hours)",
         topics: [
           "Definition and Scope of Engineering Thermodynamics",
           "Value of energy to society",
           "Microscopic versus Macroscopic Viewpoint",
-          "Concepts and Definitions: System, Surroundings, Boundary and Universe; Closed Systems, Open Systems, and Isolated Systems",
-          "Concepts and Definitions: Thermodynamic Properties: Intensive, Extensive and Specific Property",
-          "Concepts and Definitions: Thermodynamic Equilibrium",
-          "Concepts and Definitions: State, Process, and Path, Cyclic Process, Quasi-equilibrium Process, Reversible and Irreversible Process",
-          "Concepts and Definitions: Common Properties: Pressure, Specific Volume, Temperature",
+          "Concepts and Definitions:- System, Surroundings, Boundary and Universe; Closed Systems, Open Systems, and Isolated Systems,Thermodynamic Properties: Intensive, Extensive and Specific Property,Thermodynamic Equilibrium,State, Process, and Path, Cyclic Process, Quasi-equilibrium Process, Reversible and Irreversible Process,Common Properties: Pressure, Specific Volume, Temperature,",
           "Zeroth Law of Thermodynamics, Equality of Temperature",
         ],
       },
       {
-        title: "Energy and Energy Transfer (3 hours)",
+        title: "Energy and Energy Transfer(3 hours)",
         topics: [
           "Energy and its Meaning",
           "Stored Energy and Transient Energy: Total Energy",
-          "Energy Transfer: Heat Transfer",
-          "Energy Transfer: Work Transfer",
+          "Energy Transfer:- Heat Transfer,Work Transfer,",
           "Expressions for displacement Work Transfer",
           "Power",
         ],
       },
       {
-        title: "Properties of Common Substances (6 hours)",
+        title: "Properties of Common Substances(6 hours)",
         topics: [
           "Pure Substance and State Postulate",
           "Ideal Gas and Ideal Gas Relations",
@@ -400,7 +426,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "First Law of Thermodynamics (8 hours)",
+        title: "First Law of Thermodynamics(9 hours)",
         topics: [
           "First Law of Thermodynamics for Control Mass: First Law of Thermodynamics for Control Mass Undergoing Cyclic Process",
           "First Law of Thermodynamics for Control Volume",
@@ -410,7 +436,7 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Second Law of Thermodynamics(8 hours)",
+        title: "Second Law of Thermodynamics(9 hours)",
         topics: [
           "Necessity of Formulation of Second Law",
           "Entropy and Second Law of Thermodynamics for an Isolated System",
@@ -423,24 +449,19 @@ const ksSecondSemComputer = [
         ],
       },
       {
-        title: "Thermodynamic Cycles (8 hours)",
+        title: "Thermodynamic Cycles(9 hours)",
         topics: [
           "Classification of Cycles",
-          "Air Standard Analysis: Otto Cycle",
-          "Air Standard Analysis: Diesel Cycle",
-          "Air Standard Analysis: Brayton Cycle",
-          "Air Standard Analysis: Rankine Cycle",
-          "Air Standard Analysis: Vapor Compression Refrigeration Cycle",
+          "Air Standard Analysis:- Otto Cycle,Diesel Cycle,Brayton Cycle,Rankine Cycle,Vapor Compression Refrigeration Cycle,",
         ],
       },
       {
-        title: "Introduction to Heat Transfer (8 hours)",
+        title: "Introduction to Heat Transfer (6 hours)",
         topics: [
           "Basic Concepts and Modes of Heat Transfer",
           "One dimensional steady state heat conduction through a plane wall",
           "Radial steady state heat conduction through a hollow cylinder",
-          "Heat flow through composite structures: Composite Plane Wall",
-          "Heat flow through composite structures: Multilayer Ttubes",
+          "Heat flow through composite structures:- Composite Plane Wall,Multilayer Ttubes,",
           "Electrical Analogy for Thermal Resistance",
           "Combined Heat Transfer and Overall Heat Transfer Coefficient for Plane Wall and Tube",
           "Nature of Convection: Free and Forced Convection",
@@ -448,170 +469,164 @@ const ksSecondSemComputer = [
         ],
       },
     ],
+    practicals: [
+      "Temperature Measurements",
+      "Experiment related to First Law",
+      "Heat Pump",
+      "Heat Conduction",
+      "Heat Radiation",
+    ],
+    references: [
+      "“Engineering Thermodynamics”, E. Rathakrishnan, Tata Mc Graw Hill.",
+      '“Fundamentals of Engineering Thermodynamics", J. R. Howell & R. O. Buckius, McGraw Hill Publishers',
+      "“Fundamentals of Thermodynamics”, V. Wylen, Sonntag & Borgnakke, 6th Edition, Wiley",
+      '“Fundamentals of Engineering Thermodynamics", M. J. Moran & H. N. Shapiro, 5th Edition, John Wiley & Sons, Inc.',
+      '"Thermodynamics: An Engineering Approach", Y. A. Cengel & M.A. Boles,5th Edition, McGraw-Hill, 2006',
+      '"Heat Transfer", J. P. Holman, McGraw-Hill',
+      '"Heat Transfer: A Practical Approach", Y. A. Cengel,2nd Edition, McGraw-Hill',
+    ],
+    evaluationScheme:
+      '<table border="1" cellspacing="0" cellpadding="0" width="276"> <tbody> <tr> <td width="62" valign="center"> <b> <p align="center">Chapter</p> </b> </td> <td width="69" valign="center"> <p align="center"><b>Hours</b></p> </td> <td width="137" valign="center"> <p align="center"><b>Marks distribution *</b></p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">1</p> </td> <td width="69" valign="top"> <p align="center">4</p> </td> <td width="137" valign="top"> <p align="center">10</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">2</p> </td> <td width="69" valign="top"> <p align="center">4</p> </td> <td width="137" valign="top"> <p align="center">4</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">3</p> </td> <td width="69" valign="top"> <p align="center">6</p> </td> <td width="137" valign="top"> <p align="center">12</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">4</p> </td> <td width="69" valign="top"> <p align="center">8</p> </td> <td width="137" valign="top"> <p align="center">14</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">5</p> </td> <td width="69" valign="top"> <p align="center">9</p> </td> <td width="137" valign="top"> <p align="center">14</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">6</p> </td> <td width="69" valign="top"> <p align="center">8</p> </td> <td width="137" valign="top"> <p align="center">14</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">7</p> </td> <td width="69" valign="top"> <p align="center">6</p> </td> <td width="137" valign="top"> <p align="center">12</p> </td> </tr> <tr> <td width="62" valign="top"> <p align="center">Total</p> </td> <td width="69" valign="top"> <p align="center">45</p> </td> <td width="137" valign="top"> <p align="center">80</p> </td> </tr> </tbody> </table>',
   },
   {
     id: "computer-second-workshoptechnology",
-    title: "Workshop Techonology",
+    title: "Workshop Technology",
     objective:
-      "The subject aims at imparting knowledge and skill components in the field of basic workshop technology. It deals with different hand and machine tools required for manufacturing simple metal components and articles.",
+      "To impart knowledge and skill components in the field of basic workshop technology.To be familiar with different hand and machine tools required for manufacturing simple metal components and articles.",
     chapters: [
       {
-        title: "1. General safety Considerations (2 hours)",
+        title: "General safety Considerations(2 hours)",
         topics: [
-          "1.1 Bench Tools",
-          "1.2 Machinist’s Hammers",
-          "1.3 Screw Drivers",
-          "1.4 Punches",
-          "1.5 Chisels",
-          "1.6 Scrapers",
-          "1.7 Scribers",
-          "1.8 Files",
-          "1.9 Pliers and Cutters",
-          "1.10 Wrenches",
-          "1.11 Hacksaw",
-          "1.12 Bench Vise",
-          "1.13 Hand drill",
-          "1.14 Taps and Dies",
-          "1.15 Hand Shears",
-          "1.16 Rules, Tapes and Squares",
-          "1.17 Soldering Iron",
-          "1.18 Rivets",
+          "Bench Tools",
+          "Machinist’s Hammers",
+          "Screw Drivers",
+          "Punches",
+          "Chisels",
+          "Scrapers",
+          "Scribers",
+          "Files",
+          "Pliers and Cutters",
+          "Wrenches",
+          "Hacksaw",
+          "Bench Vise",
+          "Hand Drill",
+          "Taps and Dies",
+          "Hand Shears",
+          "Rules,Tapes and Squares",
+          "Soldering Iron",
+          "Rivets",
         ],
       },
       {
-        title: "2. Hand Working Operations (1 hours)",
+        title: "Hand Working Operations(1 hour)",
         topics: [
-          "2.1. Sawing",
-          "2.2. Filing",
-          "2.3. Threading",
-          "2.4. Scribing",
-          "2.5. Shearing",
-          "2.6. Soldering",
-          "2.7. Riveting",
+          "Sawing",
+          "Filing",
+          "Threading",
+          "Scribing",
+          "Shearing",
+          "Soldering",
+          "Riveting",
         ],
       },
       {
-        title: "3. Measuring and Gauging",
+        title: "Measuring and Gauging(1 hour)",
         topics: [
-          "3.1 Introduction",
-          "3.2 Semi – Precision Tools – Calipers, depth Gauge, Feeler Gauge",
-          "3.3 Precision Tools – Micrometers, Vernier Calipers, Vernier Height Gauge, Telescopic Gauge, Hole Gauge, Bevel Protractor, Dial Indicator, Gauge Blocks and Surface Plate",
+          "Introduction",
+          "Semi–Precision Tools: Calipers, Depth Gauge, Feeler Gauge",
+          "Precision Tools: Micrometers, Vernier Calipers, Vernier Height Gauge, Telescopic Gauge, Hole Gauge, Bevel Protractor, Dial Indicator, Gauge Blocks and Surface Plate",
         ],
       },
       {
-        title: "4. Drills and Drilling Processes (1 hours)",
+        title: "Drills and Drilling Processes(1 hour)",
         topics: [
-          "4.1 Introduction",
-          "4.2 Types of Drill Presses",
-          "4.3 Work Holding Devices and Accessories",
-          "4.4 Cutting Tools",
-          "4.5 Geometry of Drill Bits",
-          "4.6 Grinding of Drill Bits",
-          "4.7 Operations – Drilling, Counter – boring, Counter – sinking, Reaming, Honning, Lapping",
-          "4.8 Cutting Speeds",
-          "4.9 Drilling Safety",
+          "Introduction",
+          "Types of Drill Presses",
+          "Work Holding Devices and Accessories",
+          "Cutting Tools",
+          "Geometry of Drill Bits",
+          "Grinding of Drill Bits",
+          "Operations: Drilling, Counter-boring, Counter-sinking, Reaming, Honning, Lapping",
+          "Cutting Speeds",
+          "Drilling Safety",
         ],
       },
       {
-        title: "5. Machine Tools (4 hours)",
+        title: "Machine Tools(4 hours)",
         topics: [
-          "5.1 General Safety Considerations",
-          "5.2 Engine Lathes",
-          "5.2.1 Introduction",
-          "5.2.2 Physical Construction",
-          "5.2.3 Types of Lathe",
-          "5.2.4 Lathe Operations – Facing, Turning, Threading",
-          "11",
-          "5.3 Shapers",
-          "5.3.1 Introduction",
-          "5.3.2 Types of Shapers",
-          "5.3.3 Physical Construction",
-          "5.3.4 General Applications",
-          "5.4 Milling Machines",
-          "5.4.1 Introduction",
-          "5.4.2 Types of Milling Machines",
-          "5.4.3 Physical Construction",
-          "5.4.4 Milling Cutters – Plain, Side, Angle, End, Form",
-          "5.4.5 Milling Operations – Plain, Side, Angular, Gang, End, Form, Keyway",
-          "5.4.6 Work Holding Devices",
-          "5.4.7 Cutter Holding Devices",
-          "5.5 Grinding Machines",
-          "5.5.1 Abrasives, Bonds, Grinding Wheels",
-          "5.5.2 Rough Grinders – Portable Grinders, Bench Grinders, Swing",
-          "Frame Grinders, Abrasive Belt Grinders",
-          "5.5.3 Precision Grinders – Cylindrical Grinders, Surface Grinders",
+          "General Safety Considerations",
+          "Engine Lathes:- Introduction,Physical Construction,Types of Lathe,Lathe Operations: Facing, Turning, Threading,",
+          "Shapers:- Introduction,Types of Shapers,Physical Construction,General Applications,",
+          "Milling Machines:- Introduction,Types of Milling Machines,Physical Construction,Milling Cutters: Plain, Side, Angle, End, Form,Milling Operations: Plain, Side, Angular, Gang, End, Form, Keyway,Work Holding Devices,Cutter Holding Devices,",
+          "Grinding Machines:- Abrasives, Bonds, Grinding Wheels,Rough Grinders: Portable Grinders, Bench Grinders, Swing Frame Grinders, Abrasive Belt Grinders,Precision Grinders: Cylindrical Grinders, Surface Grinders,",
         ],
       },
       {
-        title: "6. Material Properties (1 hours)",
+        title: "Material Properties(1 hour)",
         topics: [
-          "6.1 Tool materials – Low, medium and high carbon steels; Hot and cold rolled steels; Alloy steels; Carbide and Ceramic materials",
-          "6.2 Heat treating methods for steels – Annealing, Tempering, Normalizing, Hardening and Quenching",
-          "6.3 Non – ferrous metals – Brass, Bronze, Aluminum – Comparative Properties",
+          "Tool materials: Low, medium and high carbon steels; Hot and cold rolled steels; Alloy steels; Carbide and Ceramic materials",
+          "Heat treating methods for steels: Annealing, Tempering, Normalizing, Hardening and Quenching",
+          "Non–ferrous metals: Brass, Bronze, Aluminum; Comparative Properties",
         ],
       },
       {
-        title: "7. Sheet Metal Works (1 hours)",
+        title: "Sheet Metal Works(1 hour)",
         topics: [
-          "7.1 Introduction",
-          "7.2 Sheet Metal Tools",
-          "7.3 Marking and Layout",
-          "7.4 Operations – Bending, Cutting, Rolling",
+          "Introduction",
+          "Sheet Metal Tools",
+          "Marking and Layout",
+          "Operations: Bending, Cutting, Rolling",
         ],
       },
       {
-        title: "8. Foundry Practice (1 hours)",
+        title: "Foundry Practice(1 hour)",
         topics: [
-          "8.1 Introduction",
-          "8.2 Pattern Making",
-          "8.3 Foundry Tools",
-          "8.4 Core Making",
-          "8.5 Melting Furnace – Cupola",
-          "8.6 Sand Casting Process",
+          "Introduction",
+          "Pattern Making",
+          "Foundry Tools",
+          "Core Making",
+          "Melting Furnace – Cupola",
+          "Sand Casting Process",
         ],
       },
       {
-        title: "9. Forging Practice (1 hours)",
+        title: "Forging Practice(1 hour)",
         topics: [
-          "9.1 Introduction",
-          "9.2 Forging Tools",
-          "9.3 Operations – Upsetting, Drawing, Cutting, Bending, Punching",
-          "9.4 Forging Presses and Hammers",
-          "9.5 Advantages and Limitations",
+          "Introduction",
+          "Forging Tools",
+          "Operations: Upsetting, Drawing, Cutting, Bending, Punching",
+          "Forging Presses and Hammers",
+          "Advantages and Limitations",
         ],
       },
       {
-        title: "10. Metal Joining (2 hours)",
+        title: "Metal Joining(2 hours)",
         topics: [
-          "10.1 Safety Considerations",
-          "10.2 Introduction",
-          "10.3 Soldering",
-          "10.4 Brazing",
-          "10.5 Welding – Gas Welding, Arc Welding, Resistance Welding, Tungsten Inert Gas Welding (TIG), Metal Inert Gas Welding (MIG)",
-        ],
-      },
-      {
-        title: "Workshop Practice: 3 hours/week; 15 weeks",
-        topics: [
-          "Bench Tools and hand operations: Measuring, Marking, Layout, Cutting, Filling,",
-          "Drilling, Tapping, Assembly",
-          "1. Bench Tools and hand operations: (Contd.)",
-          "2. Drilling machines",
-          "3. Measuring and Gauging Instruments",
-          "4. Engine lathe: Basic operations such as Plain turning, facing, cutting off,",
-          "knurling.",
-          "5. Engine lathe: Taper turning, drilling and boring",
-          "6. Basic Shaper Operations",
-          "7. Milling Machines",
-          "8. Grinding Machines",
-          "9. Sheet Metal works",
-          "10. Foundry Practice",
-          "11. Forging Practice",
-          "12. Electric Arc Welding",
-          "13. Gas Welding",
+          "Safety Considerations",
+          "Introduction",
+          "Soldering",
+          "Brazing",
+          "Welding: Gas Welding, Arc Welding, Resistance Welding, Tungsten Inert  Gas Welding (TIG), Metal Inert Gas Welding (MIG)",
         ],
       },
     ],
+    practicals: [],
+    references: [
+      "“Shop Theory”, J. Anderson and E. E. Tatro, McGraw – Hill, 5th Edition, 1942",
+      "“Machine shop operations and setups”, O. D. Lascoe, C. A. Nelson and H. W. Porter, American Technical society, 1973",
+      "“Machine shop Practice – Vol. I” , Industrial Press, New York, 1971",
+      "“Machine shop Practice – Vol. I” , Industrial Press, New York, 1971",
+      "“ Technology of Machine Tools”, Mc Graw Hill – Ryerson, 3rd Edition",
+      "“Machinery’s Handbook”, Oberg, Jones and Horton, 23rd Edition, Industrial Press, New York.",
+      "“Elements of Workshop Technology - Vol. I ( Manufacturing Processes)” – S. K. Hajra Choudhury and A. K. Hajra Choudhury – Media Promoters and Publishers Pvt. Ltd. , Bombay, INDIA, Tenth Edition, 1993",
+      "“Elements of Workshop Technology - Vol. II: (Machine Tools)” – S. K. Hajra Choudhury, S. K. Bose and A. K. Hajra Choudhury – Media Promoters and Publishers Pvt. Ltd. , Bombay, INDIA, Eight Edition, 1988",
+      "“A Course in Workshop Technology - Vol. I” – Prof. B. S. Raghuwanshi – Dhanpat Rai and Co. (P) Ltd, Delhi, INDIA, Ninth Edition, 2002",
+      "“A Course in Workshop Technology - Vol. II” – Prof. B. S. Raghuwanshi – Dhanpat Rai and Co. (P) Ltd, Delhi, INDIA, Ninth Edition, 2002",
+      "“Workshop Technology - Vol. I” – H. S. Bawa – Tata Mc – Graw Hill publishing company Limited, New Delhi, INDIA,",
+      "“Workshop Technology - Vol. II” – H. S. Bawa – Tata Mc – Graw Hill publishing company Limited, New Delhi, INDIA,",
+      '"A text book of Workshop Technology" - R. S. Khurmi and J. K. Gupta - S. Chand and Company Ltd, New Delhi. INDIA',
+    ],
+    evaluationScheme: "",
   },
 ];
 
