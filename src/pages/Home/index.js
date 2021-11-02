@@ -138,24 +138,29 @@ const Home = () => {
               </div>
               <Link
                 to={
-                  selectedFaculty !== "Computer"
-                    ? ""
-                    : `${category}/${getId({
+                  selectedFaculty === "Computer" || selectedFaculty === "Civil"
+                    ? `${category}/${getId({
                         faculty: selectedFaculty,
                         semester: selectedSemester,
                         subject: selectedSubject,
                       })}`
+                    : "/"
                 }
               >
                 <div
                   className="btn btn-dark modal-btn-done"
                   onClick={() => {
-                    if (selectedFaculty === "Computer") {
+                    if (
+                      selectedFaculty === "Computer" ||
+                      selectedFaculty === "Civil"
+                    ) {
                       $("#myModal").modal("toggle");
                     }
                   }}
                 >
-                  {selectedFaculty !== "Computer" ? "Coming Soon !!!" : "Done"}
+                  {selectedFaculty === "Computer" || selectedFaculty === "Civil"
+                    ? "Done"
+                    : "Coming Soon !!!"}
                 </div>
               </Link>
             </div>
