@@ -1,0 +1,15 @@
+{
+  "name": "content_getter",
+  "version": "1.0.0",
+  "description": "Get the content from a webpage",
+  "main": "index.js",
+  "author": "Shrijan Regmi",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^11.0.0"
+  }
+}
