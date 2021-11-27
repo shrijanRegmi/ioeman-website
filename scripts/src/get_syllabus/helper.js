@@ -7,8 +7,8 @@ const convertUrlToData = async (url) => {
 
     await page.goto(`${url}`);
     const data = await page.evaluate(() => {
-      const faculty = "computer";
-      const semester = "first";
+      const faculty = "civil";
+      const semester = "fifth";
 
       const newDoc = document.querySelector(".ioesolutions-custom");
       if (newDoc) {
@@ -211,7 +211,7 @@ const convertUrlToData = async (url) => {
 };
 
 const getFinalData = (variable, finalData) => {
-  return `const ${variable} = [${finalData.toString()}]`;
+  return `const ${variable} = [${finalData.toString()}];\n\nexport default ${variable};`;
 };
 
 export { convertUrlToData, getFinalData };

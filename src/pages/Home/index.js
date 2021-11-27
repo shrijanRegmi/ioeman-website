@@ -17,7 +17,7 @@ const Home = () => {
 
   const handleFacultySelection = (faculty) => {
     setSelectedFaculty(faculty);
-    const subjects = modalData[selectedFaculty][selectedSemester];
+    const subjects = modalData[faculty][selectedSemester];
     if (subjects.length > 0) {
       setSelectedSubject(subjects[0]);
     }

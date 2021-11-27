@@ -220,9 +220,9 @@ const modalData = {
     ],
     Fourth: [
       "Applied Mathematics",
-      "Data Structure and Algorithmn",
-      "Discrete Structure",
-      "Electric Machine",
+      "Data Structure and Algorithms",
+      "Discrete Structures",
+      "Electrical Machines",
       "Instrumentation I",
       "Microprocessor",
       "Numerical Methods",

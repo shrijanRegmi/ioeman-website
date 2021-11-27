@@ -1,15 +1,15 @@
 import { convertUrlToData, getFinalData } from "./helper.js";
 import fs from "fs";
 
-const variable = "ksFourthSemComputer";
+const variable = "ksFifthSemCivil";
 const urls = [
-  "https://ioesolutions.esign.com.np/contents/numerical-method-sh-553",
-  "https://ioesolutions.esign.com.np/contents/applied-mathematics-sh-551",
-  "https://ioesolutions.esign.com.np/contents/instrumentation-i-ee-552",
-  "https://ioesolutions.esign.com.np/contents/data-structure-and-algorithm-ct-552",
-  "https://ioesolutions.esign.com.np/contents/microprocessor-ex-551",
-  "https://ioesolutions.esign.com.np/contents/discrete-structure-ct-551",
-  "https://ioesolutions.esign.com.np/contents/electrical-machine-ee-554",
+  "https://ioesolutions.esign.com.np/contents/theory-of-structure-ii-ce-601",
+  "https://ioesolutions.esign.com.np/contents/water-supply-engineering-ce-605",
+  "https://ioesolutions.esign.com.np/contents/engineering-hydrology-ce-606",
+  "https://ioesolutions.esign.com.np/contents/concrete-technology-and-masonry-structure-ce-603",
+  "https://ioesolutions.esign.com.np/contents/numerical-methods-sh-603",
+  "https://ioesolutions.esign.com.np/contents/foundation-engineering-ce-602",
+  "https://ioesolutions.esign.com.np/contents/survey-camp-ce-604",
 ];
 
 const getSyllabus = async () => {
@@ -26,7 +26,9 @@ const getSyllabus = async () => {
     getFinalData(variable, finalData),
     (err) => {
       if (err) throw err;
-      console.log(`Success: Generating syllabus of ${finalData.length} subjects`);
+      console.log(
+        `Success: Generating syllabus of ${finalData.length}/${urls.length} subjects`
+      );
     }
   );
 };
