@@ -85,7 +85,7 @@ const Syllabus = () => {
         </div>
       ) : (
         <div
-          className="text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
+          className="syllabus-main text-left px-4 px-lg-5 col-12 col-lg-8 col-xl-10"
           style={{
             marginBottom: "200px",
           }}

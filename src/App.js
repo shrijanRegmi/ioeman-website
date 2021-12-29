@@ -5,13 +5,13 @@ import "bootstrap/dist/js/bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Syllabus from "./pages/Syllabus";
 import Footer from "./components/footer";
-import "./styles/variables.scss";
-import "./styles/global.scss";
 import Books from "./pages/Books";
 import OldQuestions from "./pages/Old Questions";
 import Formulas from "./pages/Formulas";
 import { Worker } from "@react-pdf-viewer/core";
 import Header from "./components/header";
+import "./styles/variables.scss";
+import "./styles/global.scss";
 
 function App() {
   return (

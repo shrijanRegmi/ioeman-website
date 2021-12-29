@@ -237,7 +237,6 @@ const ksThirdSemComputer = [
   {
     id: "computer-third-electriccircuittheory",
     title: "Electric Circuit Theory",
-    title: "Electric Circuit Theory",
     objective:
       "sTo continue work in Basic Electrical Engineering including the use of the Laplace Transform to determine the time and frequency domain responses of electric circuits.",
     chapters: [
