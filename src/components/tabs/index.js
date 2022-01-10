@@ -12,7 +12,7 @@ const Tabs = ({ initialItem, items, onChange }) => {
 
   return (
     <div className="ioeman-tabs">
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="tabs-container d-flex justify-content-around align-items-center">
         {items.map((item, i) => {
           return (
             <h4

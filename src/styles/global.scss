@@ -24,7 +24,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #555;
 }
 
 /* Handle on hover */
@@ -51,4 +51,14 @@ a {
 
 .ioeman-font-500 {
   font-weight: 500 !important;
+}
+
+.ioeman-scrollbar-none {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ioeman-overflow-y-auto {
+  overflow-y: auto;
 }

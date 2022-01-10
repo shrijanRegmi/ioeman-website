@@ -41,11 +41,6 @@ const Books = () => {
       route: `/syllabus/${id}`,
     },
     {
-      id: 1,
-      value: "Books",
-      route: `/books/${id}`,
-    },
-    {
       id: 2,
       value: "Old Questions",
       route: `/oldquestions/${id}`,
