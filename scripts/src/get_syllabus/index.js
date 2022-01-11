@@ -3,13 +3,13 @@ import fs from "fs";
 
 const variable = "ksFifthSemCivil";
 const urls = [
-  "https://ioesolutions.esign.com.np/contents/theory-of-structure-ii-ce-601",
-  "https://ioesolutions.esign.com.np/contents/water-supply-engineering-ce-605",
-  "https://ioesolutions.esign.com.np/contents/engineering-hydrology-ce-606",
-  "https://ioesolutions.esign.com.np/contents/concrete-technology-and-masonry-structure-ce-603",
-  "https://ioesolutions.esign.com.np/contents/numerical-methods-sh-603",
-  "https://ioesolutions.esign.com.np/contents/foundation-engineering-ce-602",
-  "https://ioesolutions.esign.com.np/contents/survey-camp-ce-604",
+  "https://ioesolutions.esign.com.np/contents/design-of-steel-and-timber-structure-ce-651",
+  "https://ioesolutions.esign.com.np/contents/communication-english-sh-651",
+  "https://ioesolutions.esign.com.np/contents/engineering-economics-ce-655",
+  "https://ioesolutions.esign.com.np/contents/building-technology-ce-652",
+  "https://ioesolutions.esign.com.np/contents/sanitary-engineering-ce-656",
+  "https://ioesolutions.esign.com.np/contents/transportation-engineering-ce-653",
+  "https://ioesolutions.esign.com.np/contents/irrigation-and-drainage-ce-654",
 ];
 
 const getSyllabus = async () => {

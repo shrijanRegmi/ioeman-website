@@ -6,6 +6,7 @@ import ksFourthSemCivil from "./fourth_sem/civil";
 import ksFourthSemComputer from "./fourth_sem/computer";
 import ksSecondSemCivil from "./second_sem/civil";
 import ksSecondSemComputer from "./second_sem/computer";
+import ksSixthSemCivil from "./sixth_sem/civil";
 import ksSixthSemComputer from "./sixth_sem/computer";
 import ksThirdSemCivil from "./third_sem/civil";
 import ksThirdSemComputer from "./third_sem/computer";
@@ -27,6 +28,7 @@ const studyMaterials = [
   ...ksFifthSemCivil,
 
   ...ksSixthSemComputer,
+  ...ksSixthSemCivil,
 ];
 
 export default studyMaterials;
